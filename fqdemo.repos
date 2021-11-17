@@ -1,0 +1,9 @@
+repositories:
+  fqdemo/fqdemo-msgs:
+    type: git
+    url: https://github.com/rosdabbler/fqdemo-msgs.git
+    version: main
+  fqdemo/fqdemo-nodes:
+    type: git
+    url: https://github.com/rosdabbler/fqdemo-nodes.get
+    version: main
