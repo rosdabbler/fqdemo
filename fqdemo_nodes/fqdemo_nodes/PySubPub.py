@@ -13,8 +13,6 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-## @file
-#  @brief contains definition of the main node for the package
 
 import math
 
@@ -23,6 +21,7 @@ import rclpy
 from rclpy.node import Node
 
 TIMER_PERIOD_SECONDS = 0.5
+
 
 class PySubPub(Node):
     """
@@ -36,30 +35,20 @@ class PySubPub(Node):
 
     Node Name: py_node
 
-    ## Topics Subscribed:
-    - @b num_power (type @b fqdemo_msgs.msg.NumPwrData)
+    Topics Subscribed:
+    * num_power (type **fqdemo_msgs.msg.NumPwrData**)
 
-    ## Topics Published:
-    - @b power_result (type @b fqdemo_msgs.msg.NumPwrResult)
+    Topics Published:
+    * power_result (type **fqdemo_msgs.msg.NumPwrResult**)
 
-    ## Class API
+    Class API
+    =========
 
     """
 
     def __init__(self):
         super().__init__('pysubpub')
-
-        ## Publishes to topic @b power_result type @b NumPwrResult
-
-        ## Message is published either in response to an incoming @b power_result
-        # @b NumPwrResult message, or a message with zeros is published periodically.
-
         self.publisher = self.create_publisher(NumPwrResult, 'power_result', 10)
-
-        ## Subscribes to topic @b num_power type @b NumPwrData
-
-        ## Publishes a response (using publisher) to topic @b power_result type @b NumPwrResult
-        #  with values calculated from the incoming message.
 
         self.subscriber = self.create_subscription(
           NumPwrData, 'num_power', self.topic_callback, 10
@@ -74,7 +63,7 @@ class PySubPub(Node):
         :param number: Base value to take to a power or root
         :param exponent: Value to use as exponent for power or root
         :return: Result of (pow(number, exponent), pow(number, 1./exponent))
-        :rtype: tuple(float, float) 
+        :rtype: tuple(float, float)
 
         """
         to_power = math.pow(number, exponent)
@@ -89,9 +78,7 @@ class PySubPub(Node):
         self.publisher.publish(msg)
         self.get_logger().info(f'Publishing to_power: {msg.to_power}, to_root: {msg.to_root}')
 
-    def topic_callback(self, 
-          msg:NumPwrData
-        ):
+    def topic_callback(self, msg):
         """Process callback for subscription to num_power."""
         self.get_logger().info(f'I heard {msg}')
         response_msg = NumPwrResult()
