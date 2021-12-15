@@ -1,0 +1,6 @@
+{% extends "!layout.html" %}
+
+  {% block menu %}
+    {{ super() }}
+    <li class="toctree-l1"><a class="reference internal" href="{{ pathto('genindex') }}">INDEX</a></li>
+  {% endblock %}

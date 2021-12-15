@@ -1,0 +1,48 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# colcon build
+**/build
+**/install
+**/log
+
+# python
+**/.pycache_cache
+**/__pycache__
+
+# doxygen and/or rosdoc2
+doc/_build
+doc/generated
+
+# rosdoc2 sphinx/exhale output folder
+api
