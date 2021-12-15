@@ -25,15 +25,16 @@ from rclpy.node import Node
 TIMER_PERIOD_SECONDS = 0.5
 
 class PySubPub(Node):
-    """Node to simulate a sample filter to an incoming topic, publishing result.
+    """
+    Node to simulate a sample filter to an incoming topic, publishing result.
 
-    # Main documentation for this ROS2 node
+    Main documentation for this ROS2 node
 
     Listens for a message with a number and power. Publishes a message with that number to that
     power, and to that root. Part of a demonstration of a ROS2 package with supporting quality
     features.
 
-    ## Node Name: py_node
+    Node Name: py_node
 
     ## Topics Subscribed:
     - @b num_power (type @b fqdemo_msgs.msg.NumPwrData)
@@ -44,6 +45,7 @@ class PySubPub(Node):
     ## Class API
 
     """
+
     def __init__(self):
         super().__init__('pysubpub')
 
@@ -65,13 +67,14 @@ class PySubPub(Node):
         self._timer = self.create_timer(TIMER_PERIOD_SECONDS, self._timer_callback)
 
     @staticmethod
-    def apply_powers(
-        number, exponent):
-        """!
-        Given a number and an exponent, calculate its power and root.
-        @param number Base value to take to a power or root
-        @param exponent Value to use as exponent for power or root
-        @return -> tuple(float, float) Result of (pow(number, exponent), pow(number, 1./exponent))
+    def apply_powers(number, exponent):
+        """
+        Calculate power and root for a given number.
+
+        :param number: Base value to take to a power or root
+        :param exponent: Value to use as exponent for power or root
+        :return: Result of (pow(number, exponent), pow(number, 1./exponent))
+        :rtype: tuple(float, float) 
 
         """
         to_power = math.pow(number, exponent)
@@ -79,7 +82,7 @@ class PySubPub(Node):
         return ((to_power, to_root))
 
     def _timer_callback(self):
-        """! callback for a periodic timer, publishes a zero message """
+        """Process callback for a periodic timer, publishes a zero message."""
         msg = NumPwrResult()
         msg.to_power = 0.0
         msg.to_root = 0.0
@@ -89,7 +92,7 @@ class PySubPub(Node):
     def topic_callback(self, 
           msg:NumPwrData
         ):
-        """! callback for subscription to num_power """
+        """Process callback for subscription to num_power."""
         self.get_logger().info(f'I heard {msg}')
         response_msg = NumPwrResult()
         (response_msg.to_power, response_msg.to_root) = self.apply_powers(msg.num, msg.power)
@@ -98,7 +101,7 @@ class PySubPub(Node):
             f'Publishing to_power: {response_msg.to_power}, to_root: {response_msg.to_root}')
 
     def run(self):
-        """! main program for the node """
+        """Execute main program for the node."""
         # run the node, teardown when done
         rclpy.spin(self)
         self.destroy_node()
