@@ -31,4 +31,4 @@ int main(int argc, char ** argv)
   return 0;
 }
 
-#endif // DOXYGEN_SHOULD_SKIP_THIS
+#endif  // DOXYGEN_SHOULD_SKIP_THIS

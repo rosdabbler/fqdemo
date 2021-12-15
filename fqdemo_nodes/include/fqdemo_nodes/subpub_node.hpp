@@ -22,4 +22,4 @@
 /// main function that runs the node defined by the class fqdemo_nodes::DemoSubPub
 int main(int argc, char ** argv);
 
-#endif // FQDEMO_NODES__SUBPUB_NODE_HPP_
+#endif  // FQDEMO_NODES__SUBPUB_NODE_HPP_
