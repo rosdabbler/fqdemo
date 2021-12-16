@@ -45,4 +45,4 @@ doc/_build
 doc/generated
 
 # rosdoc2 sphinx/exhale output folder
-api
+generated

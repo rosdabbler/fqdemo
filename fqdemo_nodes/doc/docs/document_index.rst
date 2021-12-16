@@ -7,6 +7,6 @@ Package Documents
     *
 
 .. toctree::
-    CONTRIBUTING <../CONTRIBUTING>
-    CHANGELOG <../CHANGELOG>
-    README <../README>
+    CONTRIBUTING <../../CONTRIBUTING>
+    CHANGELOG <../../CHANGELOG>
+    README <../../README>
