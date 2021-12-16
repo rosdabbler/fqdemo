@@ -11,7 +11,6 @@ Package API
    C++ API <generated/unabridged_api>
    Python API <modules>
    Documents <doc/docs/document_index>
-   README <README>
 
 Indices and Search
 ==================
