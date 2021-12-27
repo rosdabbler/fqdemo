@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -q -y --no-install-recommends \
 
 COPY . .
 
-CMD [ "bash", "-c", "main.sh" ]
+CMD [ "bash", "-c", "/main.sh"]
