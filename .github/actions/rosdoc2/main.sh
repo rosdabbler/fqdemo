@@ -1,6 +1,10 @@
 #!/bin/bash
 
+set -x
+
 echo "This is main.sh for the rosdoc2 action"
+
+echo "rosdoc2 repo is $INPUT_ROSDOC2_REPO"
 
 git clone $INPUT_ROSDOC2_REPO rosdoc2
 
@@ -18,4 +22,6 @@ mkdir -p /results/build
 mkdir -p /results/cr
 mkdir -p /results/output
 
+rosdoc2 build --debug -d /results/build -c /results/cr -o /results/output -p ./fqdemo_msgs
+rosdoc2 build --debug -d /results/build -c /results/cr -o /results/output -p ./fqdemo_msgs
 rosdoc2 build --debug -d /results/build -c /results/cr -o /results/output -p ./
