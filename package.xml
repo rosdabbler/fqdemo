@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>fqdemo</name>
+  <version>0.0.1</version>
+  <description>Metapackage as a demo of ros2 package and repo organization</description>
+  <maintainer email="kent@caspia.com">R. Kent James</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>fqdemo_nodes</exec_depend>
+  <exec_depend>fqdemo_msgs</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+    <rosdoc2>rosdoc2.yaml</rosdoc2>
+  </export>
+</package>
