@@ -60,6 +60,6 @@ builders:
         #   - directory containing doxygen xml files, relative to --output-directory
         #         
         name: 'sphinx_builder',
-        output_dir: 'sphinx_html',
+        output_dir: '',
         sphinx_sourcedir: ''
     }
