@@ -1,0 +1,18 @@
+name: "rosdoc2 generate"
+
+description: "Generate documentation using rosdoc2"
+
+inputs:
+  rosdoc2_repo:
+    description: "github repo path for rosdoc2 checkout"
+    required: true
+    default: "https://github.com/ros-infrastructure/rosdoc2.git"
+
+  rosdoc2_branch:
+    description: "git branch to checkout in rosdoc2_repo"
+    required: true
+    default: "main"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
