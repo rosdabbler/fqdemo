@@ -4,18 +4,29 @@ on:
   push:
     branches:
       - "main"
-      - "metarepo"
   workflow_dispatch:
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v2
+        with:
+          # fetch full depth so we can get the docs branch
+          fetch-depth: '0'
 
-      - name: Generate
+      - name: Checkout docs
+        run: git checkout docs
+
+      - name: Merge main into docs
+        run: git rebase main
+
+      - name: Generate documentation
         uses: ./.github/actions/rosdoc2
         with:
           rosdoc2_repo: "https://github.com/rkent/rosdoc2.git"
           rosdoc2_branch: "prerun_conf_py"
+
+      - name: Update docs branch
+        run: git status
