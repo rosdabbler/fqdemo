@@ -17,7 +17,7 @@ jobs:
           fetch-depth: '0'
 
       - name: Checkout docs
-        run: git checkout docs
+        run: git switch docs
 
       - name: Merge main into docs
         run: git rebase main
