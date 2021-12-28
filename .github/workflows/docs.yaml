@@ -21,6 +21,7 @@ jobs:
 
       - name: Checkout docs
         run: git switch docs
+      - run: git pull
 
       - name: Merge main into docs
         run: git rebase main
