@@ -23,7 +23,7 @@ jobs:
         run: git switch docs
 
       - name: Merge main into docs
-        run: git rebase main
+        run: git merge main -m "[github action] Merge main into docs"
       - run: git push
 
       - name: Generate documentation
@@ -36,4 +36,5 @@ jobs:
         run: git log --graph --pretty=format:'\''%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset'\' --date=short --all -n 15
       - run: git add docs
       - run: git status
+      - run: git commit -m "[github action] Publish"
       - run: git push
