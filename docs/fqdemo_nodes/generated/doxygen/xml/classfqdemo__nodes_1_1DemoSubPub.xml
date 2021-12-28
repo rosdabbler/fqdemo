@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classfqdemo__nodes_1_1DemoSubPub" kind="class" language="C++" prot="public">
     <compoundname>fqdemo_nodes::DemoSubPub</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
     <includes refid="demo__sub__pub_8hpp" local="no">demo_sub_pub.hpp</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" prot="private" static="no" mutable="no">
@@ -182,7 +182,7 @@
         <label>rclcpp::Node</label>
       </node>
     </collaborationgraph>
-    <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="47" column="1" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="46" bodyend="76"/>
+    <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="46" column="1" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="47" bodyend="76"/>
     <listofallmembers>
       <member refid="classfqdemo__nodes_1_1DemoSubPub_1a957376ca2d36b9dca22c457dfbb869d5" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>apply_powers</name></member>
       <member refid="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" prot="private" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>count_</name></member>

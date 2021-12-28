@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="subpub__node_8hpp" kind="file" language="C++">
     <compoundname>subpub_node.hpp</compoundname>
     <includedby refid="subpub__node_8cpp" local="yes">src/subpub_node.cpp</includedby>
@@ -52,9 +52,9 @@
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FQDEMO_NODES__SUBPUB_NODE_HPP_</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FQDEMO_NODES__SUBPUB_NODE_HPP_</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="subpub__node_8hpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv);</highlight></codeline>
+<codeline lineno="23" refid="subpub__node_8hpp_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="subpub__node_8hpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv);</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>FQDEMO_NODES__SUBPUB_NODE_HPP_</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>FQDEMO_NODES__SUBPUB_NODE_HPP_</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/fqdemo_nodes/subpub_node.hpp"/>
   </compounddef>

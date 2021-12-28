@@ -14,6 +14,11 @@ Namespaces
 .. toctree::
    :maxdepth: 1
 
+   namespace_rclcpp.rst
+
+.. toctree::
+   :maxdepth: 1
+
    namespace_std__chrono_literals.rst
 
 Classes and Structs

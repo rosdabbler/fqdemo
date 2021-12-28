@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Program Listing for File demo_sub_pub.hpp &mdash; fqdemo_nodes 0.0.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -50,6 +51,7 @@
 <li class="toctree-l4"><a class="reference internal" href="namespace_fqdemo_nodes.html#classes">Classes</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_rclcpp.html">Namespace rclcpp</a></li>
 <li class="toctree-l3"><a class="reference internal" href="namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
 </ul>
 </li>
@@ -76,7 +78,7 @@
 <li class="toctree-l4"><a class="reference internal" href="dir_include.html#subdirectories">Subdirectories</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="dir_include_fqdemo_nodes.html">Directory nodes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dir_include_fqdemo_nodes.html">Directory fqdemo_nodes</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="dir_include_fqdemo_nodes.html#files">Files</a></li>
 </ul>
 </li>
@@ -184,7 +186,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="program-listing-for-file-demo-sub-pub-hpp">
+  <section id="program-listing-for-file-demo-sub-pub-hpp">
 <span id="program-listing-file-include-fqdemo-nodes-demo-sub-pub-hpp"></span><h1>Program Listing for File demo_sub_pub.hpp<a class="headerlink" href="#program-listing-for-file-demo-sub-pub-hpp" title="Permalink to this headline"></a></h1>
 <p>↰ <a class="reference internal" href="file_include_fqdemo_nodes_demo_sub_pub.hpp.html#file-include-fqdemo-nodes-demo-sub-pub-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include/fqdemo_nodes/demo_sub_pub.hpp</span></code>)</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//</span>
@@ -206,45 +208,45 @@
 <span class="cp">#define FQDEMO_NODES__DEMO_SUB_PUB_HPP_</span>
 
 
-<span class="cp">#include</span> <span class="cpf">&lt;tuple&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;rclcpp/rclcpp.hpp&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;fqdemo_msgs/msg/num_pwr_result.hpp&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;fqdemo_msgs/msg/num_pwr_data.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tuple&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rclcpp/rclcpp.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;fqdemo_msgs/msg/num_pwr_result.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;fqdemo_msgs/msg/num_pwr_data.hpp&quot;</span><span class="cp"></span>
 
-<span class="k">namespace</span> <span class="n">fqdemo_nodes</span>
-<span class="p">{</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">fqdemo_nodes</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
 
-<span class="k">class</span> <span class="nc">DemoSubPub</span> <span class="o">:</span> <span class="k">public</span> <span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span>
-<span class="p">{</span>
-<span class="k">public</span><span class="o">:</span>
-  <span class="n">DemoSubPub</span><span class="p">();</span>
-  <span class="k">virtual</span> <span class="o">~</span><span class="n">DemoSubPub</span><span class="p">()</span> <span class="p">{}</span>
+<span class="k">class</span> <span class="nc">DemoSubPub</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="n">DemoSubPub</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">DemoSubPub</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
 
-  <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="n">apply_powers</span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">double_t</span> <span class="n">number</span><span class="p">,</span>
-    <span class="k">const</span> <span class="kt">double</span> <span class="n">exponent</span>
-  <span class="p">);</span>
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">apply_powers</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">double_t</span><span class="w"> </span><span class="n">number</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">exponent</span><span class="w"></span>
+<span class="w">  </span><span class="p">);</span><span class="w"></span>
 
-<span class="k">private</span><span class="o">:</span>
-  <span class="kt">void</span> <span class="n">topic_callback</span><span class="p">(</span><span class="k">const</span> <span class="n">fqdemo_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">NumPwrData</span><span class="o">::</span><span class="n">SharedPtr</span> <span class="n">msg</span><span class="p">);</span>
+<span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">topic_callback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">fqdemo_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">NumPwrData</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">void</span> <span class="nf">timer_callback</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">timer_callback</span><span class="p">();</span><span class="w"></span>
 
-  <span class="n">rclcpp</span><span class="o">::</span><span class="n">Subscription</span><span class="o">&lt;</span><span class="n">fqdemo_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">NumPwrData</span><span class="o">&gt;::</span><span class="n">SharedPtr</span> <span class="n">subscriber_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Subscription</span><span class="o">&lt;</span><span class="n">fqdemo_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">NumPwrData</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">subscriber_</span><span class="p">;</span><span class="w"></span>
 
-  <span class="n">rclcpp</span><span class="o">::</span><span class="n">TimerBase</span><span class="o">::</span><span class="n">SharedPtr</span> <span class="n">timer_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">TimerBase</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">timer_</span><span class="p">;</span><span class="w"></span>
 
-  <span class="n">rclcpp</span><span class="o">::</span><span class="n">Publisher</span><span class="o">&lt;</span><span class="n">fqdemo_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">NumPwrResult</span><span class="o">&gt;::</span><span class="n">SharedPtr</span> <span class="n">publisher_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Publisher</span><span class="o">&lt;</span><span class="n">fqdemo_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">NumPwrResult</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">publisher_</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kt">size_t</span> <span class="n">count_</span><span class="p">;</span>
-<span class="p">};</span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">count_</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
 
-<span class="p">}</span>  <span class="c1">// namespace fqdemo_nodes</span>
+<span class="p">}</span><span class="w">  </span><span class="c1">// namespace fqdemo_nodes</span>
 
 <span class="cp">#endif  </span><span class="c1">// FQDEMO_NODES__DEMO_SUB_PUB_HPP_</span>
 </pre></div>
 </div>
-</div>
+</section>
 
 
            </div>

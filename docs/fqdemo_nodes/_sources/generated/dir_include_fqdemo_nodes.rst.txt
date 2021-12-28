@@ -1,8 +1,8 @@
 .. _dir_include_fqdemo_nodes:
 
 
-Directory nodes
-===============
+Directory fqdemo_nodes
+======================
 
 
 |exhale_lsh| :ref:`Parent directory <dir_include>` (``include``)

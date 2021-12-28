@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Class DemoSubPub &mdash; fqdemo_nodes 0.0.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -50,6 +51,7 @@
 <li class="toctree-l4"><a class="reference internal" href="namespace_fqdemo_nodes.html#classes">Classes</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_rclcpp.html">Namespace rclcpp</a></li>
 <li class="toctree-l3"><a class="reference internal" href="namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
 </ul>
 </li>
@@ -76,7 +78,7 @@
 <li class="toctree-l4"><a class="reference internal" href="dir_include.html#subdirectories">Subdirectories</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="dir_include_fqdemo_nodes.html">Directory nodes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dir_include_fqdemo_nodes.html">Directory fqdemo_nodes</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="dir_include_fqdemo_nodes.html#files">Files</a></li>
 </ul>
 </li>
@@ -183,33 +185,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="class-demosubpub">
+  <section id="class-demosubpub">
 <span id="exhale-class-classfqdemo-nodes-1-1demosubpub"></span><h1>Class DemoSubPub<a class="headerlink" href="#class-demosubpub" title="Permalink to this headline"></a></h1>
 <ul class="simple">
 <li><p>Defined in <a class="reference internal" href="file_include_fqdemo_nodes_demo_sub_pub.hpp.html#file-include-fqdemo-nodes-demo-sub-pub-hpp"><span class="std std-ref">File demo_sub_pub.hpp</span></a></p></li>
 </ul>
-<div class="section" id="inheritance-relationships">
+<section id="inheritance-relationships">
 <h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline"></a></h2>
-<div class="section" id="base-type">
+<section id="base-type">
 <h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline"></a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Node</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">rclcpp::Node</span></code></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="class-documentation">
+</section>
+</section>
+<section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv4N12fqdemo_nodes10DemoSubPubE">
-<span id="_CPPv3N12fqdemo_nodes10DemoSubPubE"></span><span id="_CPPv2N12fqdemo_nodes10DemoSubPubE"></span><span id="fqdemo_nodes::DemoSubPub"></span><span class="target" id="classfqdemo__nodes_1_1DemoSubPub"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DemoSubPub</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">Node</span></span><a class="headerlink" href="#_CPPv4N12fqdemo_nodes10DemoSubPubE" title="Permalink to this definition"></a><br /></dt>
+<span id="_CPPv3N12fqdemo_nodes10DemoSubPubE"></span><span id="_CPPv2N12fqdemo_nodes10DemoSubPubE"></span><span id="fqdemo_nodes::DemoSubPub"></span><span class="target" id="classfqdemo__nodes_1_1DemoSubPub"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DemoSubPub</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Node</span></span><a class="headerlink" href="#_CPPv4N12fqdemo_nodes10DemoSubPubE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>A demonstration of a simple ROS2 node that raises numbers to a power and root</p>
 <p>This node is used as a demo of how to setup a folder for a package, including various things like documentation and testing. The node itself listens to a custom message that contains a number and an exponent, then publishes a message with the number taken to the power and root of that exponent.</p>
 <p><strong>Topics Subscribed:</strong> /num_power (fqdemo_msgs.msg.NumPwrdata). Publishes a message to /power_result after message is received.</p>
 <p><strong>Topics Published:</strong> /power_result (fqdemo_msgs.msg.NumPwrResult). A zero-valued message is published periodically. A message with appropriate values is published in response to a /num_power message. </p>
 </dd></dl>
 
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

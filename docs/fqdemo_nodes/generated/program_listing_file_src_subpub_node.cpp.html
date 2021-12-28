@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Program Listing for File subpub_node.cpp &mdash; fqdemo_nodes 0.0.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -50,6 +51,7 @@
 <li class="toctree-l4"><a class="reference internal" href="namespace_fqdemo_nodes.html#classes">Classes</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="namespace_rclcpp.html">Namespace rclcpp</a></li>
 <li class="toctree-l3"><a class="reference internal" href="namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
 </ul>
 </li>
@@ -76,7 +78,7 @@
 <li class="toctree-l4"><a class="reference internal" href="dir_include.html#subdirectories">Subdirectories</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="dir_include_fqdemo_nodes.html">Directory nodes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dir_include_fqdemo_nodes.html">Directory fqdemo_nodes</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="dir_include_fqdemo_nodes.html#files">Files</a></li>
 </ul>
 </li>
@@ -184,7 +186,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="program-listing-for-file-subpub-node-cpp">
+  <section id="program-listing-for-file-subpub-node-cpp">
 <span id="program-listing-file-src-subpub-node-cpp"></span><h1>Program Listing for File subpub_node.cpp<a class="headerlink" href="#program-listing-for-file-subpub-node-cpp" title="Permalink to this headline"></a></h1>
 <p>↰ <a class="reference internal" href="file_src_subpub_node.cpp.html#file-src-subpub-node-cpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">src/subpub_node.cpp</span></code>)</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//</span>
@@ -202,28 +204,28 @@
 <span class="c1">//   See the License for the specific language governing permissions and</span>
 <span class="c1">//   limitations under the License.</span>
 
-<span class="cp">#include</span> <span class="cpf">&lt;memory&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;fqdemo_nodes/demo_sub_pub.hpp&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;fqdemo_nodes/subpub_node.hpp&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;rclcpp/rclcpp.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;fqdemo_nodes/demo_sub_pub.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;fqdemo_nodes/subpub_node.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rclcpp/rclcpp.hpp&quot;</span><span class="cp"></span>
 
 <span class="c1">// This is needed to prevent a duplicate definition warning from sphinx and breathe</span>
 <span class="c1">// documentation generation.</span>
 <span class="cp">#if !defined(DOXYGEN_SHOULD_SKIP_THIS)</span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
-  <span class="n">rclcpp</span><span class="o">::</span><span class="n">spin</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">fqdemo_nodes</span><span class="o">::</span><span class="n">DemoSubPub</span><span class="o">&gt;</span><span class="p">());</span>
-  <span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">spin</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">fqdemo_nodes</span><span class="o">::</span><span class="n">DemoSubPub</span><span class="o">&gt;</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="cp">#endif </span><span class="c1">// DOXYGEN_SHOULD_SKIP_THIS</span>
 </pre></div>
 </div>
-</div>
+</section>
 
 
            </div>
