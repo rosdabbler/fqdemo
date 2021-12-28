@@ -4,18 +4,37 @@ on:
   push:
     branches:
       - "main"
-      - "metarepo"
   workflow_dispatch:
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v2
+        with:
+          # fetch full depth so we can get the docs branch
+          fetch-depth: '0'
 
-      - name: Generate
+      - name: Set user
+        uses: fregante/setup-git-user@v1
+
+      - name: Checkout docs
+        run: git switch docs
+
+      - name: Merge main into docs
+        run: git merge main -m "[github action] Merge main into docs"
+      - run: git push
+
+      - name: Generate documentation
         uses: ./.github/actions/rosdoc2
         with:
           rosdoc2_repo: "https://github.com/rkent/rosdoc2.git"
           rosdoc2_branch: "prerun_conf_py"
+
+      - name: Update docs branch
+        run: git log --graph --pretty=format:'\''%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset'\' --date=short --all -n 15
+      - run: git add docs
+      - run: git status
+      - run: git commit -m "[github action] Publish"
+      - run: git push
