@@ -41,8 +41,8 @@
 **/__pycache__
 
 # doxygen and/or rosdoc2
-doc/_build
-doc/generated
+docs_build
+cross_reference
 
 # rosdoc2 sphinx/exhale output folder
 generated
