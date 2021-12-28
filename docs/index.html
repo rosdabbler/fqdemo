@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// get rid of "/index/html" if present
+url = window.location.toString()
+if (url.endsWith("/index.html")) {
+  url = url.substr(0, url.lastIndexOf("/index.html"))
+}
+// and redirect
+window.location.replace(url + "/fqdemo")
+</script>
+</body>
+</html> 
