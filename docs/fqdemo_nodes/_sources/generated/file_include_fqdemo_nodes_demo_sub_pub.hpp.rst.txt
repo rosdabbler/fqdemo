@@ -1,0 +1,70 @@
+
+.. _file_include_fqdemo_nodes_demo_sub_pub.hpp:
+
+File demo_sub_pub.hpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_fqdemo_nodes>` (``include/fqdemo_nodes``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+This is the header file for the DemoSubPub class. 
+
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/fqdemo_nodes/demo_sub_pub.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_fqdemo_nodes_demo_sub_pub.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``fqdemo_msgs/msg/num_pwr_data.hpp``
+
+- ``fqdemo_msgs/msg/num_pwr_result.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``tuple``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_demo_sub_pub.cpp`
+
+- :ref:`file_src_subpub_node.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_fqdemo_nodes`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classfqdemo__nodes_1_1DemoSubPub`
+

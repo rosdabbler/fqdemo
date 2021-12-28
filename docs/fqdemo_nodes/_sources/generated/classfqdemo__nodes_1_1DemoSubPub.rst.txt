@@ -1,0 +1,22 @@
+.. _exhale_class_classfqdemo__nodes_1_1DemoSubPub:
+
+Class DemoSubPub
+================
+
+- Defined in :ref:`file_include_fqdemo_nodes_demo_sub_pub.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Node``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: fqdemo_nodes::DemoSubPub

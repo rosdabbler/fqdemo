@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacefqdemo__nodes" kind="namespace" language="C++">
+    <compoundname>fqdemo_nodes</compoundname>
+    <innerclass refid="classfqdemo__nodes_1_1DemoSubPub" prot="public">fqdemo_nodes::DemoSubPub</innerclass>
+    <briefdescription>
+<para>namespace for the ROS2 package containing this node </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="29" column="1"/>
+  </compounddef>
+</doxygen>
