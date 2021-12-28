@@ -5,7 +5,11 @@
   <version>0.0.1</version>
   <description>Metapackage as a demo of ros2 package and repo organization</description>
   <maintainer email="kent@caspia.com">R. Kent James</maintainer>
+  <author email="kent@caspia.com">R. Kent James</author>
   <license>Apache License 2.0</license>
+  <url type="repository">https://github.com/rosdabbler/fqdemo</url>
+  <url type="website">https://rosdabbler.github.com/fqdemo/fqdemo</url>
+  <url type="bugtracker">https://github.com/rosdabbler/fqdemo/issues</url>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
