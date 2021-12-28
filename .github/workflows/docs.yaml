@@ -19,11 +19,9 @@ jobs:
       - name: Set user
         uses: fregante/setup-git-user@v1
 
-      - name: Checkout docs
-        run: git switch docs
-
       - name: Merge main into docs
-        run: git merge main -m "[github action] Merge main into docs"
+        run: git switch docs
+      - run: git merge main -m "Merge main into docs"
       - run: git push
 
       - name: Generate documentation
@@ -33,8 +31,6 @@ jobs:
           rosdoc2_branch: "prerun_conf_py"
 
       - name: Update docs branch
-        run: git log --graph --pretty=format:'\''%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset'\' --date=short --all -n 15
       - run: git add docs
-      - run: git status
-      - run: git commit -m "[github action] Publish"
+      - run: git commit -m "Publish updated documents"
       - run: git push
