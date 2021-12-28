@@ -1,0 +1,21 @@
+.. _dir_include_fqdemo_nodes:
+
+
+Directory nodes
+===============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_include>` (``include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``include/fqdemo_nodes``
+
+
+Files
+-----
+
+- :ref:`file_include_fqdemo_nodes_demo_sub_pub.hpp`
+- :ref:`file_include_fqdemo_nodes_subpub_node.hpp`
+
+
