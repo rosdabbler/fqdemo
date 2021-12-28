@@ -136,7 +136,7 @@
 <li class="toctree-l4 current"><a class="current reference internal" href="#">fqdemo_nodes.PySubPub module</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="fqdemo_nodes.html#module-contents">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fqdemo_nodes.html#module-fqdemo_nodes">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -186,8 +186,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="fqdemo-nodes-pysubpub-module">
-<h1>fqdemo_nodes.PySubPub module<a class="headerlink" href="#fqdemo-nodes-pysubpub-module" title="Permalink to this headline"></a></h1>
+  <section id="module-fqdemo_nodes.PySubPub">
+<span id="fqdemo-nodes-pysubpub-module"></span><h1>fqdemo_nodes.PySubPub module<a class="headerlink" href="#module-fqdemo_nodes.PySubPub" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="fqdemo_nodes.PySubPub.PySubPub">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fqdemo_nodes.PySubPub.</span></span><span class="sig-name descname"><span class="pre">PySubPub</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fqdemo_nodes.PySubPub.PySubPub" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">rclpy.node.Node</span></code></p>
+<p>Node to simulate a sample filter to an incoming topic, publishing result.</p>
+<p># Main documentation for this ROS2 node</p>
+<p>Listens for a message with a number and power. Publishes a message with that number to that
+power, and to that root. Part of a demonstration of a ROS2 package with supporting quality
+features.</p>
+<p>## Node Name: py_node</p>
+<p>## Topics Subscribed:
+- &#64;b num_power (type &#64;b fqdemo_msgs.msg.NumPwrData)</p>
+<p>## Topics Published:
+- &#64;b power_result (type &#64;b fqdemo_msgs.msg.NumPwrResult)</p>
+<p>## Class API</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="fqdemo_nodes.PySubPub.PySubPub.apply_powers">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">apply_powers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exponent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fqdemo_nodes.PySubPub.PySubPub.apply_powers" title="Permalink to this definition"></a></dt>
+<dd><p>!
+Given a number and an exponent, calculate its power and root.
+&#64;param number Base value to take to a power or root
+&#64;param exponent Value to use as exponent for power or root
+&#64;return -&gt; tuple(float, float) Result of (pow(number, exponent), pow(number, 1./exponent))</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fqdemo_nodes.PySubPub.PySubPub.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fqdemo_nodes.PySubPub.PySubPub.run" title="Permalink to this definition"></a></dt>
+<dd><p>! main program for the node</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fqdemo_nodes.PySubPub.PySubPub.topic_callback">
+<span class="sig-name descname"><span class="pre">topic_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">fqdemo_msgs.msg.NumPwrData</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fqdemo_nodes.PySubPub.PySubPub.topic_callback" title="Permalink to this definition"></a></dt>
+<dd><p>! callback for subscription to num_power</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
