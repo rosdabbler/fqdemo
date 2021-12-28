@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Package Documents &mdash; fqdemo 0.0.0 documentation</title>
+  <title>Repository Organization &mdash; fqdemo 0.0.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Repository Organization" href="Repository%20organization.html" />
-    <link rel="prev" title="fqdemo" href="../../index.html" /> 
+    <link rel="next" title="About" href="about.html" />
+    <link rel="prev" title="Package Documents" href="document_index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,10 +41,10 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Documents</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Repository%20organization.html">Repository Organization</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Repository%20organization.html#message-packages">Message packages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Repository%20organization.html#repo-level-documentation">Repo-level documentation.</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="document_index.html">Documents</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Repository Organization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#message-packages">Message packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#repo-level-documentation">Repo-level documentation.</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="about.html">About</a></li>
@@ -71,9 +71,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Package Documents</li>
+          <li><a href="document_index.html">Package Documents</a> &raquo;</li>
+      <li>Repository Organization</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/doc/docs/document_index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/doc/docs/Repository organization.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -81,35 +82,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="package-documents">
-<h1>Package Documents<a class="headerlink" href="#package-documents" title="Permalink to this headline"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Repository%20organization.html">Repository Organization</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Repository%20organization.html#message-packages">Message packages</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Repository%20organization.html#repo-level-documentation">Repo-level documentation.</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="license.html">LICENSE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="test.html">Using Markdown</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../CONTRIBUTING.html">CONTRIBUTING</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../CHANGELOG.html">CHANGELOG</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../README.html">README</a></li>
-</ul>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="repository-organization">
+<h1>Repository Organization<a class="headerlink" href="#repository-organization" title="Permalink to this headline"></a></h1>
+<p>There are a number of different ways you can organize repositories under ROS. But some principles we followed:</p>
+<section id="message-packages">
+<h2>Message packages<a class="headerlink" href="#message-packages" title="Permalink to this headline"></a></h2>
+<p>The files associated with messages, services, and actions are definitions of interfaces. You need to be able to load these files without having to load the nodes that interact with these types, as users of the package should not need to load the nodes in a workspace if the nodes are going to be run on a differen machine. So, you need a separate ROS2 package for the messages.</p>
+</section>
+<section id="repo-level-documentation">
+<h2>Repo-level documentation.<a class="headerlink" href="#repo-level-documentation" title="Permalink to this headline"></a></h2>
+<p>Looking at the <a class="reference external" href="https://index.ros.org">ROS index</a>, there is documentation there for both ROS packages as well as for the repositories that contain those packages. If you have a project that involves both nodes and packages, where do you document the entire project? This demo assumes that there needs to be documentation of the combined project, and that this documentation should reside in the repository that contains the individual packages. We want most of the documentation for the project to exist in a single location, so that means we want to use the ROS2 documentation tool <a class="reference external" href="https://github.com/ros-infrastructure/rosdoc2">rosdoc2</a> for that purpose. Since rosdoc2 is designed for packages only, that implies that the repository holding all of the packages is itself a package. So we make it a meta package.</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../index.html" class="btn btn-neutral float-left" title="fqdemo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Repository%20organization.html" class="btn btn-neutral float-right" title="Repository Organization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="document_index.html" class="btn btn-neutral float-left" title="Package Documents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="about.html" class="btn btn-neutral float-right" title="About" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
