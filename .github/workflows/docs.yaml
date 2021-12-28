@@ -31,6 +31,6 @@ jobs:
           rosdoc2_branch: "prerun_conf_py"
 
       - name: Update docs branch
-      - run: git add docs
+        run: git add docs
       - run: git commit -m "Publish updated documents"
       - run: git push
