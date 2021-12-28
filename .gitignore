@@ -45,4 +45,6 @@ docs_build
 cross_reference
 
 # rosdoc2 sphinx/exhale output folder
-generated
+fqdemo_nodes/generated
+fqdemo_msgs/generated
+./generated
