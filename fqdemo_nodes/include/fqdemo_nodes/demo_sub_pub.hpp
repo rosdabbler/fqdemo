@@ -35,10 +35,10 @@ namespace fqdemo_nodes
     contains a number and an exponent, then publishes a message with the number taken to the
     power and root of that exponent.
 
-    <b>Topics Subscribed:</b> /num_power (fqdemo_msgs.msg.NumPwrdata). Publishes a message
+    <b>Topics Subscribed:</b> `num_power` (fqdemo_msgs.msg.NumPwrData). Publishes a message
     to /power_result after message is received.
 
-    <b>Topics Published:</b> /power_result (fqdemo_msgs.msg.NumPwrResult). A zero-valued message
+    <b>Topics Published:</b> `power_result` (fqdemo_msgs.msg.NumPwrResult). A zero-valued message
     is published periodically. A message with appropriate values is published in response to
     a /num_power message.
 */
@@ -55,8 +55,11 @@ public:
     const double exponent   ///< the exponent for the power or root
   );
 
-private:
-  /// called whenever a NumPwrData message is received.
+public:
+  /**
+   * called whenever a NumPwrData message is received.
+   * @param[in] msg The message
+   **/
   void topic_callback(const fqdemo_msgs::msg::NumPwrData::SharedPtr msg);
 
   /// called periodically to generate a default response

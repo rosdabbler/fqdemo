@@ -56,6 +56,16 @@ exclude_patterns = []
 
 master_doc = 'index'
 
+# This setting allows references like `SomeClassName` to work without having
+# to explicitly specify :py:class:`SomeClassName`
+default_role = 'any'
+
+# breathe configuration
+breathe_default_members = ('members',
+# 'undoc-members',
+# 'private-members',
+)
+
 source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
