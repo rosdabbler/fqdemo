@@ -41,12 +41,12 @@ class PySubPub(Node):
 
     **Topics Subscribed**
 
-    * ``num_power`` (type :py:class:`fqdemo_msgs:fqdemo_msgs.msg.NumPwrData`)
+    * ``num_power`` (type :py:class:`NumPwrData`)
         Requests from package users to calculate a power and root.
 
     **Topics Published**
 
-    * ``power_result`` (type :doc:`fqdemo_msgs:fqdemo_msgs.msg.NumPwrResult`)
+    * ``power_result`` (type :py:class:`fqdemo_msgs:fqdemo_msgs.msg.NumPwrResult`)
         Message is published either in response to an incoming ``num_power``
         NumPwrResult message, or a message with zeros is published periodically.
     """
