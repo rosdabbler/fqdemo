@@ -17,3 +17,6 @@
 This is module-level documentation for fqdemo_nodes. The docstring must appear before
 any python statements, including ``include`` types.
 """
+
+class Testme:
+    i_am_me = True
