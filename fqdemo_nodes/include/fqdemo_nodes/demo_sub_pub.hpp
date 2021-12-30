@@ -28,19 +28,24 @@
 namespace fqdemo_nodes
 {
 
-/** A demonstration of a simple ROS2 node that raises numbers to a power and root
+/** 
 
-    This node is used as a demo of how to setup a folder for a package, including various
-    things like documentation and testing. The node itself listens to a custom message that
-    contains a number and an exponent, then publishes a message with the number taken to the
-    power and root of that exponent.
+  A demonstration of a simple ROS2 node that raises numbers to a power and root
 
-    <b>Topics Subscribed:</b> `num_power` (fqdemo_msgs.msg.NumPwrData). Publishes a message
-    to /power_result after message is received.
+  This node is used as a demo of how to setup a folder for a package, including various
+  things like documentation and testing. The node itself listens to a custom message that
+  contains a number and an exponent, then publishes a message with the number taken to the
+  power and root of that exponent.
 
-    <b>Topics Published:</b> `power_result` (fqdemo_msgs.msg.NumPwrResult). A zero-valued message
-    is published periodically. A message with appropriate values is published in response to
-    a /num_power message.
+  @rstb
+  **Topics Subscribed**: ``num_power`` (type :py:class:`NumPwrData`): Publishes a message to `/power_result`
+  after message is received.
+  @endrst
+
+  <b>Topics Published:</b> `power_result` (type @rst `NumPwrResult` @endrst ). A zero-valued message
+  is published periodically. A message with appropriate values is published in response to
+  a /num_power message.
+
 */
 
 class DemoSubPub : public rclcpp::Node

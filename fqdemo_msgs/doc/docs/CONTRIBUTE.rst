@@ -1,5 +1,7 @@
-CONTRIBUTE (myst in rst)
-========================
+CONTRIBUTING (rst)
+==================
+
+(This is an example of a myst file embedded in an rst document)
 
 .. include:: ../../CONTRIBUTING.md
    :parser: myst_parser.sphinx_

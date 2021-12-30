@@ -66,3 +66,18 @@ EXPAND_ONLY_PREDEF     = YES
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
 PREDEFINED             = DOXYGEN_SHOULD_SKIP_THIS
+
+# See https://exhale.readthedocs.io/en/latest/mastering_doxygen.html#doxygen-aliases
+# and https://my-favorite-documentation-test.readthedocs.io/en/latest/using_intersphinx.html
+
+# My own edits based on https://breathe.readthedocs.io/en/latest/markups.html
+
+ALIASES  = "endrst=\endverbatim"
+# rst inline
+ALIASES += "rst=\verbatim embed:rst:inline"
+# rst block with leading blanks
+ALIASES += "rstb=\verbatim embed:rst"
+# rst block with leading asterisk
+ALIASES += "rsta=\verbatim embed:rst:leading-asterisk"
+# rst block with leading triple slashes
+ALIASES += "rsts=\verbatim embed:rst:leading-slashes"
