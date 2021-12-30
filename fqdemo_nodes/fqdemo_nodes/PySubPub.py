@@ -13,14 +13,16 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
+"""
+(This is module-level documentation for PySubPub. This docstring must be inserted
+before any code in the module.)
+
+Overview
+========
+This module contains a single class which creates a ROS2 node.
+"""
+
 import math
-
-"""
-Where does this docstring show?
-
-Main documentation for this ROS2 node
--------------------------------------
-"""
 
 from fqdemo_msgs.msg import NumPwrData, NumPwrResult
 import rclpy
@@ -35,11 +37,11 @@ class PySubPub(Node):
     power, and to that root. Part of a demonstration of a ROS2 package with supporting quality
     features.
 
-    **Node Name**: py_node
+    **Node Name**: ``py_node``
 
     **Topics Subscribed**
 
-    * ``num_power`` (type :doc:`fqdemo_msgs:fqdemo_msgs.msg.NumPwrData`)
+    * ``num_power`` (type :py:class:`fqdemo_msgs:fqdemo_msgs.msg.NumPwrData`)
         Requests from package users to calculate a power and root.
 
     **Topics Published**
