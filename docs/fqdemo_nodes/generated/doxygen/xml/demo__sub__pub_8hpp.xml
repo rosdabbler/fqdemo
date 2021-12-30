@@ -69,34 +69,34 @@
 <codeline lineno="28" refid="namespacefqdemo__nodes" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacefqdemo__nodes" kindref="compound">fqdemo_nodes</ref></highlight></codeline>
 <codeline lineno="29"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="classfqdemo__nodes_1_1DemoSubPub" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classfqdemo__nodes_1_1DemoSubPub" kindref="compound">DemoSubPub</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rclcpp::Node</highlight></codeline>
-<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub" kindref="compound">DemoSubPub</ref>();</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classfqdemo__nodes_1_1DemoSubPub" kindref="compound">DemoSubPub</ref>()<sp/>{}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::tuple&lt;double,<sp/>double&gt;<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a957376ca2d36b9dca22c457dfbb869d5" kindref="member">apply_powers</ref>(</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>double_t<sp/>number,<sp/><sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>exponent<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/>);</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" kindref="member">topic_callback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>fqdemo_msgs::msg::NumPwrData::SharedPtr<sp/>msg);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" kindref="member">timer_callback</ref>();</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" refkind="member"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;fqdemo_msgs::msg::NumPwrData&gt;::SharedPtr<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" kindref="member">subscriber_</ref>;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="classfqdemo__nodes_1_1DemoSubPub_1a7e147c9be71df32b5441b05feb50b51b" refkind="member"><highlight class="normal"><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a7e147c9be71df32b5441b05feb50b51b" kindref="member">timer_</ref>;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75" refid="classfqdemo__nodes_1_1DemoSubPub_1a3434595efd95f3bf945556d85718ea7a" refkind="member"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;fqdemo_msgs::msg::NumPwrResult&gt;::SharedPtr<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a3434595efd95f3bf945556d85718ea7a" kindref="member">publisher_</ref>;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78" refid="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" kindref="member">count_</ref>;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>fqdemo_nodes</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>FQDEMO_NODES__DEMO_SUB_PUB_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classfqdemo__nodes_1_1DemoSubPub" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classfqdemo__nodes_1_1DemoSubPub" kindref="compound">DemoSubPub</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rclcpp::Node</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub" kindref="compound">DemoSubPub</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classfqdemo__nodes_1_1DemoSubPub" kindref="compound">DemoSubPub</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::tuple&lt;double,<sp/>double&gt;<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a957376ca2d36b9dca22c457dfbb869d5" kindref="member">apply_powers</ref>(</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>double_t<sp/>number,<sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>exponent<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" kindref="member">topic_callback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>fqdemo_msgs::msg::NumPwrData::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" kindref="member">timer_callback</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" refkind="member"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;fqdemo_msgs::msg::NumPwrData&gt;::SharedPtr<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" kindref="member">subscriber_</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classfqdemo__nodes_1_1DemoSubPub_1a7e147c9be71df32b5441b05feb50b51b" refkind="member"><highlight class="normal"><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a7e147c9be71df32b5441b05feb50b51b" kindref="member">timer_</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classfqdemo__nodes_1_1DemoSubPub_1a3434595efd95f3bf945556d85718ea7a" refkind="member"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;fqdemo_msgs::msg::NumPwrResult&gt;::SharedPtr<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a3434595efd95f3bf945556d85718ea7a" kindref="member">publisher_</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" kindref="member">count_</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>fqdemo_nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>FQDEMO_NODES__DEMO_SUB_PUB_HPP_</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/fqdemo_nodes/demo_sub_pub.hpp"/>
   </compounddef>

@@ -132,8 +132,10 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A demonstration of a simple ROS2 node that raises numbers to a power and root</p>
 <p>This node is used as a demo of how to setup a folder for a package, including various things like documentation and testing. The node itself listens to a custom message that contains a number and an exponent, then publishes a message with the number taken to the power and root of that exponent.</p>
-<p><b>Topics Subscribed:</b> <code>num_power</code> (fqdemo_msgs.msg.NumPwrData). Publishes a message to /power_result after message is received.</p>
-<p><b>Topics Published:</b> <code>power_result</code> (fqdemo_msgs.msg.NumPwrResult). A zero-valued message is published periodically. A message with appropriate values is published in response to a /num_power message. </p>
+<pre class="fragment">embed:rst
+**Topics Subscribed**: ``num_power`` (type :py:class:`NumPwrData`): Publishes a message to `/power_result`
+after message is received.
+</pre><p><b>Topics Published:</b> <code>power_result</code> (type</p><pre class="fragment">embed:rst:inline `NumPwrResult` </pre><p> ). A zero-valued message is published periodically. A message with appropriate values is published in response to a /num_power message. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a957376ca2d36b9dca22c457dfbb869d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a957376ca2d36b9dca22c457dfbb869d5">&#9670;&nbsp;</a></span>apply_powers()</h2>
