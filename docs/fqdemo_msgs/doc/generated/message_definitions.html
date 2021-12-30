@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NumPwrResult &mdash; fqdemo_msgs 0.0.0 documentation</title>
+  <title>Message Definitions &mdash; fqdemo_msgs 0.0.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="LICENSE" href="license.html" />
-    <link rel="prev" title="NumPwrData" href="NumPwrMsg.html" /> 
+    <link rel="next" title="NumPwrData" href="msg/NumPwrMsg.html" />
+    <link rel="prev" title="Package fqdemo_msgs" href="../../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,14 +41,26 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="document_index.html">Documents</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="CONTRIBUTE.html">CONTRIBUTING (rst)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CONTRIBUTING.html">CONTRIBUTING (myst)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="NumPwrMsg.html">NumPwrData</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">NumPwrResult</a></li>
-<li class="toctree-l2"><a class="reference internal" href="license.html">LICENSE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="test.html">Testing of various documentation features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../README.html">README</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Message Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="msg/NumPwrMsg.html">NumPwrData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="msg/NumPwrResult.html">NumPwrResult</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="package_documents.html">Package Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../test.html">Testing of various documentation features</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="standard_documents.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="standard/CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standard/CHANGELOG.html#id1">Changelog</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="standard/CONTRIBUTING.html">CONTRIBUTING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard/LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard/README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standard/README.html#fqdemo-msgs">fqdemo_msgs</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -67,10 +79,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="document_index.html">Package Documents</a> &raquo;</li>
-      <li>NumPwrResult</li>
+      <li>Message Definitions</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/doc/docs/NumPwrResult.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/doc/generated/message_definitions.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -78,24 +89,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="numpwrresult">
-<h1>NumPwrResult<a class="headerlink" href="#numpwrresult" title="Permalink to this headline"></a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="NumPwrResult">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NumPwrResult</span></span><a class="headerlink" href="#NumPwrResult" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Demo of a custom message definition in a ros package.</span>
-<span class="c1">#</span>
-<span class="c1"># This message is supposed to be a simulation for a node that is like a message</span>
-<span class="c1"># filter. This is the response. The node has received an incoming message, and</span>
-<span class="c1"># publishes this message in response.</span>
-
-<span class="c1"># Result of raising the incoming number to a power</span>
-<span class="n">float64</span> <span class="n">to_power</span>
-<span class="c1"># Result of taking the powereth_root of the number, eg to the power (1./exponent)</span>
-<span class="n">float64</span> <span class="n">to_root</span>
-</pre></div>
+  <section id="message-definitions">
+<h1>Message Definitions<a class="headerlink" href="#message-definitions" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="msg/NumPwrMsg.html">NumPwrData</a></li>
+<li class="toctree-l1"><a class="reference internal" href="msg/NumPwrResult.html">NumPwrResult</a></li>
+</ul>
 </div>
 </section>
 
@@ -103,8 +103,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="NumPwrMsg.html" class="btn btn-neutral float-left" title="NumPwrData" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="license.html" class="btn btn-neutral float-right" title="LICENSE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../../index.html" class="btn btn-neutral float-left" title="Package fqdemo_msgs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="msg/NumPwrMsg.html" class="btn btn-neutral float-right" title="NumPwrData" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
