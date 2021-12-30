@@ -4,8 +4,8 @@
     <compoundname>fqdemo_nodes::DemoSubPub</compoundname>
     <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
     <includes refid="demo__sub__pub_8hpp" local="no">demo_sub_pub.hpp</includes>
-      <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" prot="private" static="no" mutable="no">
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" prot="public" static="no" mutable="no">
         <type>rclcpp::Subscription&lt; fqdemo_msgs::msg::NumPwrData &gt;::SharedPtr</type>
         <definition>rclcpp::Subscription&lt;fqdemo_msgs::msg::NumPwrData&gt;::SharedPtr fqdemo_nodes::DemoSubPub::subscriber_</definition>
         <argsstring></argsstring>
@@ -17,9 +17,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="66" column="36" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="66" bodyend="-1"/>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="69" column="36" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classfqdemo__nodes_1_1DemoSubPub_1a7e147c9be71df32b5441b05feb50b51b" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classfqdemo__nodes_1_1DemoSubPub_1a7e147c9be71df32b5441b05feb50b51b" prot="public" static="no" mutable="no">
         <type>rclcpp::TimerBase::SharedPtr</type>
         <definition>rclcpp::TimerBase::SharedPtr fqdemo_nodes::DemoSubPub::timer_</definition>
         <argsstring></argsstring>
@@ -31,9 +31,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="69" column="32" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="69" bodyend="-1"/>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="72" column="32" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="72" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classfqdemo__nodes_1_1DemoSubPub_1a3434595efd95f3bf945556d85718ea7a" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classfqdemo__nodes_1_1DemoSubPub_1a3434595efd95f3bf945556d85718ea7a" prot="public" static="no" mutable="no">
         <type>rclcpp::Publisher&lt; fqdemo_msgs::msg::NumPwrResult &gt;::SharedPtr</type>
         <definition>rclcpp::Publisher&lt;fqdemo_msgs::msg::NumPwrResult&gt;::SharedPtr fqdemo_nodes::DemoSubPub::publisher_</definition>
         <argsstring></argsstring>
@@ -45,9 +45,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="72" column="33" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="72" bodyend="-1"/>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="75" column="33" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" prot="public" static="no" mutable="no">
         <type>size_t</type>
         <definition>size_t fqdemo_nodes::DemoSubPub::count_</definition>
         <argsstring></argsstring>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="75" column="10" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="75" bodyend="-1"/>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="78" column="10" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="78" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -88,6 +88,47 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="50" column="11" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fqdemo_nodes::DemoSubPub::topic_callback</definition>
+        <argsstring>(const fqdemo_msgs::msg::NumPwrData::SharedPtr msg)</argsstring>
+        <name>topic_callback</name>
+        <param>
+          <type>const fqdemo_msgs::msg::NumPwrData::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>called whenever a NumPwrData message is received. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="63" column="8" bodyfile="src/demo_sub_pub.cpp" bodystart="58" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fqdemo_nodes::DemoSubPub::timer_callback</definition>
+        <argsstring>()</argsstring>
+        <name>timer_callback</name>
+        <briefdescription>
+<para>called periodically to generate a default response </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="66" column="8" bodyfile="src/demo_sub_pub.cpp" bodystart="71" bodyend="80"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -118,47 +159,13 @@
         <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="53" column="21" bodyfile="src/demo_sub_pub.cpp" bodystart="48" bodyend="56"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="private-func">
-      <memberdef kind="function" id="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void fqdemo_nodes::DemoSubPub::topic_callback</definition>
-        <argsstring>(const fqdemo_msgs::msg::NumPwrData::SharedPtr msg)</argsstring>
-        <name>topic_callback</name>
-        <param>
-          <type>const fqdemo_msgs::msg::NumPwrData::SharedPtr</type>
-          <declname>msg</declname>
-        </param>
-        <briefdescription>
-<para>called whenever a NumPwrData message is received. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="60" column="8" bodyfile="src/demo_sub_pub.cpp" bodystart="58" bodyend="69"/>
-      </memberdef>
-      <memberdef kind="function" id="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void fqdemo_nodes::DemoSubPub::timer_callback</definition>
-        <argsstring>()</argsstring>
-        <name>timer_callback</name>
-        <briefdescription>
-<para>called periodically to generate a default response </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="63" column="8" bodyfile="src/demo_sub_pub.cpp" bodystart="71" bodyend="80"/>
-      </memberdef>
-      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>A demonstration of a simple ROS2 node that raises numbers to a power and root</para>
 <para>This node is used as a demo of how to setup a folder for a package, including various things like documentation and testing. The node itself listens to a custom message that contains a number and an exponent, then publishes a message with the number taken to the power and root of that exponent.</para>
-<para><bold>Topics Subscribed:</bold> /num_power (fqdemo_msgs.msg.NumPwrdata). Publishes a message to /power_result after message is received.</para>
-<para><bold>Topics Published:</bold> /power_result (fqdemo_msgs.msg.NumPwrResult). A zero-valued message is published periodically. A message with appropriate values is published in response to a /num_power message. </para>
+<para><bold>Topics Subscribed:</bold> <computeroutput>num_power</computeroutput> (fqdemo_msgs.msg.NumPwrData). Publishes a message to /power_result after message is received.</para>
+<para><bold>Topics Published:</bold> <computeroutput>power_result</computeroutput> (fqdemo_msgs.msg.NumPwrResult). A zero-valued message is published periodically. A message with appropriate values is published in response to a /num_power message. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -182,16 +189,16 @@
         <label>rclcpp::Node</label>
       </node>
     </collaborationgraph>
-    <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="46" column="1" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="47" bodyend="76"/>
+    <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="46" column="1" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="47" bodyend="79"/>
     <listofallmembers>
       <member refid="classfqdemo__nodes_1_1DemoSubPub_1a957376ca2d36b9dca22c457dfbb869d5" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>apply_powers</name></member>
-      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" prot="private" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>count_</name></member>
+      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>count_</name></member>
       <member refid="classfqdemo__nodes_1_1DemoSubPub_1a594001ae7a02c599fb966f759cd9905d" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>DemoSubPub</name></member>
-      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a3434595efd95f3bf945556d85718ea7a" prot="private" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>publisher_</name></member>
-      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" prot="private" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>subscriber_</name></member>
-      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a7e147c9be71df32b5441b05feb50b51b" prot="private" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>timer_</name></member>
-      <member refid="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" prot="private" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>timer_callback</name></member>
-      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" prot="private" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>topic_callback</name></member>
+      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a3434595efd95f3bf945556d85718ea7a" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>publisher_</name></member>
+      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>subscriber_</name></member>
+      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a7e147c9be71df32b5441b05feb50b51b" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>timer_</name></member>
+      <member refid="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>timer_callback</name></member>
+      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>topic_callback</name></member>
       <member refid="classfqdemo__nodes_1_1DemoSubPub_1a8699d4237b5c9cd83461974d65ef0434" prot="public" virt="virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>~DemoSubPub</name></member>
     </listofallmembers>
   </compounddef>

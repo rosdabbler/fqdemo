@@ -66,7 +66,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classfqdemo__nodes_1_1DemoSubPub-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">fqdemo_nodes::DemoSubPub Class Reference</div>  </div>
@@ -93,17 +95,45 @@ Collaboration diagram for fqdemo_nodes::DemoSubPub:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0ab3790062646d026425c179f5536d9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfqdemo__nodes_1_1DemoSubPub.html#a0ab3790062646d026425c179f5536d9c">topic_callback</a> (const fqdemo_msgs::msg::NumPwrData::SharedPtr msg)</td></tr>
+<tr class="separator:a0ab3790062646d026425c179f5536d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb690d3185c0f74656a97b98cef9246a"><td class="memItemLeft" align="right" valign="top"><a id="acb690d3185c0f74656a97b98cef9246a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfqdemo__nodes_1_1DemoSubPub.html#acb690d3185c0f74656a97b98cef9246a">timer_callback</a> ()</td></tr>
+<tr class="memdesc:acb690d3185c0f74656a97b98cef9246a"><td class="mdescLeft">&#160;</td><td class="mdescRight">called periodically to generate a default response <br /></td></tr>
+<tr class="separator:acb690d3185c0f74656a97b98cef9246a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a957376ca2d36b9dca22c457dfbb869d5"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfqdemo__nodes_1_1DemoSubPub.html#a957376ca2d36b9dca22c457dfbb869d5">apply_powers</a> (const double_t number, const double exponent)</td></tr>
 <tr class="memdesc:a957376ca2d36b9dca22c457dfbb869d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the root and power of a number.  <a href="classfqdemo__nodes_1_1DemoSubPub.html#a957376ca2d36b9dca22c457dfbb869d5">More...</a><br /></td></tr>
 <tr class="separator:a957376ca2d36b9dca22c457dfbb869d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7f5b2a5ef9c22ccb8aa55176eeec371e"><td class="memItemLeft" align="right" valign="top"><a id="a7f5b2a5ef9c22ccb8aa55176eeec371e"></a>
+rclcpp::Subscription&lt; fqdemo_msgs::msg::NumPwrData &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfqdemo__nodes_1_1DemoSubPub.html#a7f5b2a5ef9c22ccb8aa55176eeec371e">subscriber_</a></td></tr>
+<tr class="memdesc:a7f5b2a5ef9c22ccb8aa55176eeec371e"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscription object for NumPwrData messages <br /></td></tr>
+<tr class="separator:a7f5b2a5ef9c22ccb8aa55176eeec371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e147c9be71df32b5441b05feb50b51b"><td class="memItemLeft" align="right" valign="top"><a id="a7e147c9be71df32b5441b05feb50b51b"></a>
+rclcpp::TimerBase::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfqdemo__nodes_1_1DemoSubPub.html#a7e147c9be71df32b5441b05feb50b51b">timer_</a></td></tr>
+<tr class="memdesc:a7e147c9be71df32b5441b05feb50b51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">periodic timter to generate some active output even if nothing incoming <br /></td></tr>
+<tr class="separator:a7e147c9be71df32b5441b05feb50b51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3434595efd95f3bf945556d85718ea7a"><td class="memItemLeft" align="right" valign="top"><a id="a3434595efd95f3bf945556d85718ea7a"></a>
+rclcpp::Publisher&lt; fqdemo_msgs::msg::NumPwrResult &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfqdemo__nodes_1_1DemoSubPub.html#a3434595efd95f3bf945556d85718ea7a">publisher_</a></td></tr>
+<tr class="memdesc:a3434595efd95f3bf945556d85718ea7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">publishes the results of apply_powers on the incoming message <br /></td></tr>
+<tr class="separator:a3434595efd95f3bf945556d85718ea7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e223874e01f594369c085b7069a772"><td class="memItemLeft" align="right" valign="top"><a id="a53e223874e01f594369c085b7069a772"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfqdemo__nodes_1_1DemoSubPub.html#a53e223874e01f594369c085b7069a772">count_</a></td></tr>
+<tr class="memdesc:a53e223874e01f594369c085b7069a772"><td class="mdescLeft">&#160;</td><td class="mdescRight">counter used to display number of timer messages sent <br /></td></tr>
+<tr class="separator:a53e223874e01f594369c085b7069a772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A demonstration of a simple ROS2 node that raises numbers to a power and root</p>
 <p>This node is used as a demo of how to setup a folder for a package, including various things like documentation and testing. The node itself listens to a custom message that contains a number and an exponent, then publishes a message with the number taken to the power and root of that exponent.</p>
-<p><b>Topics Subscribed:</b> /num_power (fqdemo_msgs.msg.NumPwrdata). Publishes a message to /power_result after message is received.</p>
-<p><b>Topics Published:</b> /power_result (fqdemo_msgs.msg.NumPwrResult). A zero-valued message is published periodically. A message with appropriate values is published in response to a /num_power message. </p>
+<p><b>Topics Subscribed:</b> <code>num_power</code> (fqdemo_msgs.msg.NumPwrData). Publishes a message to /power_result after message is received.</p>
+<p><b>Topics Published:</b> <code>power_result</code> (fqdemo_msgs.msg.NumPwrResult). A zero-valued message is published periodically. A message with appropriate values is published in response to a /num_power message. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a957376ca2d36b9dca22c457dfbb869d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a957376ca2d36b9dca22c457dfbb869d5">&#9670;&nbsp;</a></span>apply_powers()</h2>
@@ -144,6 +174,30 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">number</td><td>base value we want to take to a power or root </td></tr>
     <tr><td class="paramname">exponent</td><td>the exponent for the power or root </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ab3790062646d026425c179f5536d9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab3790062646d026425c179f5536d9c">&#9670;&nbsp;</a></span>topic_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fqdemo_nodes::DemoSubPub::topic_callback </td>
+          <td>(</td>
+          <td class="paramtype">const fqdemo_msgs::msg::NumPwrData::SharedPtr&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>called whenever a NumPwrData message is received. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>The message </td></tr>
   </table>
   </dd>
 </dl>

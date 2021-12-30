@@ -48,7 +48,7 @@ Program Listing for File demo_sub_pub.hpp
        const double exponent   
      );
    
-   private:
+   public:
      void topic_callback(const fqdemo_msgs::msg::NumPwrData::SharedPtr msg);
    
      void timer_callback();

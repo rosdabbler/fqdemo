@@ -7,9 +7,9 @@
     <member refid="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" kind="variable"><name>count_</name></member>
     <member refid="classfqdemo__nodes_1_1DemoSubPub_1a594001ae7a02c599fb966f759cd9905d" kind="function"><name>DemoSubPub</name></member>
     <member refid="classfqdemo__nodes_1_1DemoSubPub_1a8699d4237b5c9cd83461974d65ef0434" kind="function"><name>~DemoSubPub</name></member>
-    <member refid="classfqdemo__nodes_1_1DemoSubPub_1a957376ca2d36b9dca22c457dfbb869d5" kind="function"><name>apply_powers</name></member>
     <member refid="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" kind="function"><name>topic_callback</name></member>
     <member refid="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" kind="function"><name>timer_callback</name></member>
+    <member refid="classfqdemo__nodes_1_1DemoSubPub_1a957376ca2d36b9dca22c457dfbb869d5" kind="function"><name>apply_powers</name></member>
   </compound>
   <compound refid="namespacefqdemo__nodes" kind="namespace"><name>fqdemo_nodes</name>
   </compound>

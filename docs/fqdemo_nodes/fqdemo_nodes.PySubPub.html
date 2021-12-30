@@ -133,7 +133,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">Python API</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="fqdemo_nodes.html">fqdemo_nodes package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="fqdemo_nodes.html#submodules">Submodules</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">fqdemo_nodes.PySubPub module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">fqdemo_nodes.PySubPub module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#overview">Overview</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="fqdemo_nodes.html#module-fqdemo_nodes">Module contents</a></li>
@@ -188,6 +191,11 @@
              
   <section id="module-fqdemo_nodes.PySubPub">
 <span id="fqdemo-nodes-pysubpub-module"></span><h1>fqdemo_nodes.PySubPub module<a class="headerlink" href="#module-fqdemo_nodes.PySubPub" title="Permalink to this headline"></a></h1>
+<p>(This is module-level documentation for PySubPub. This docstring must be inserted
+before any code in the module.)</p>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h2>
+<p>This module contains a single class which creates a ROS2 node.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="fqdemo_nodes.PySubPub.PySubPub">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fqdemo_nodes.PySubPub.</span></span><span class="sig-name descname"><span class="pre">PySubPub</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fqdemo_nodes.PySubPub.PySubPub" title="Permalink to this definition"></a></dt>
@@ -196,11 +204,11 @@
 <p>Listens for a message with a number and power. Publishes a message with that number to that
 power, and to that root. Part of a demonstration of a ROS2 package with supporting quality
 features.</p>
-<p><strong>Node Name</strong>: py_node</p>
+<p><strong>Node Name</strong>: <code class="docutils literal notranslate"><span class="pre">py_node</span></code></p>
 <p><strong>Topics Subscribed</strong></p>
 <ul class="simple">
 <li><dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">num_power</span></code> (type <span class="xref std std-doc">fqdemo_msgs:fqdemo_msgs.msg.NumPwrData</span>)</dt><dd><p>Requests from package users to calculate a power and root.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">num_power</span></code> (type <a class="reference external" href="https://rosdabbler.github.io/fqdemo/fqdemo_msgs/doc/docs/NumPwrMsg.html#NumPwrData" title="(in fqdemo_msgs v0.0)"><code class="docutils literal notranslate"><span class="pre">fqdemo_msgs.msg.NumPwrData</span></code></a>)</dt><dd><p>Requests from package users to calculate a power and root.</p>
 </dd>
 </dl>
 </li>
@@ -254,12 +262,13 @@ NumPwrResult message, or a message with zeros is published periodically.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="fqdemo_nodes.PySubPub.PySubPub.topic_callback">
-<span class="sig-name descname"><span class="pre">topic_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">fqdemo_msgs.msg.NumPwrData</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fqdemo_nodes.PySubPub.PySubPub.topic_callback" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">topic_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://rosdabbler.github.io/fqdemo/fqdemo_msgs/doc/docs/NumPwrMsg.html#NumPwrData" title="(in fqdemo_msgs v0.0)"><span class="pre">fqdemo_msgs.msg.NumPwrData</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fqdemo_nodes.PySubPub.PySubPub.topic_callback" title="Permalink to this definition"></a></dt>
 <dd><p>callback for subscription to num_power</p>
 </dd></dl>
 
 </dd></dl>
 
+</section>
 </section>
 
 
