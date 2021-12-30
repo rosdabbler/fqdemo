@@ -1,18 +1,17 @@
-fqdemo_msgs
-============
+Package fqdemo_msgs
+===================
 
-Package API
-================
+Documentation
+---------------------
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
-   C++ API <generated/unabridged_api>
-   Python API <modules>
-   Documents <doc/docs/document_index>
+   doc/generated/*
 
 Indices and Search
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`search`

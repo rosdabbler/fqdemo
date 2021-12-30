@@ -4,4 +4,4 @@ NumPwrData
 .. py:class:: NumPwrData
   :canonical: fqdemo_msgs.msg.NumPwrData
 
-.. literalinclude:: ../../msg/NumPwrData.msg
+.. literalinclude:: ../../../msg/NumPwrData.msg
