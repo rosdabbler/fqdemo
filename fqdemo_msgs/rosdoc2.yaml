@@ -62,5 +62,5 @@ builders:
         #         
         name: 'sphinx_builder',
         output_dir: '',
-        sphinx_sourcedir: ""
+        sphinx_sourcedir: "doc"
     }

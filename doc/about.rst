@@ -8,4 +8,5 @@ Some of the issues considered here are:
 - testing, including linting, python, and cpp tests.
 - repository organization
 - documentation
+- use of github actions to automate testing and documentation
 
