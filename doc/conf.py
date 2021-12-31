@@ -20,7 +20,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'fqdemo_msgs'
+project = 'fqdemo'
 copyright = '2021, R. Kent James <kent@caspia.com>'
 author = 'R. Kent James <kent@caspia.com>'
 
@@ -47,7 +47,12 @@ extensions = [
 # templates_path = ['/home/kent/ros2_wses/fqdemo_ws/src/fqdemo_nodes/_templates']
 import os
 print(f'PWD: {os.getcwd()}')
-templates_path = ['doc/_templates']
+templates_path = ['_templates']
+
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = []
 
 master_doc = 'index'
 

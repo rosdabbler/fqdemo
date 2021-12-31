@@ -3,7 +3,7 @@
 <package format="3">
   <name>fqdemo_msgs</name>
   <version>0.0.0</version>
-  <description>Message accompanying fqdemo full quality demo template</description>
+  <description>Custom message definitions accompanying fqdemo full quality demo template</description>
   <maintainer email="kent@caspia.com">R. Kent James</maintainer>
   <author email="kent@caspia.com">R. Kent James</author>
   <license>Apache 2</license>
