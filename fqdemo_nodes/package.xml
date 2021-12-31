@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>fqdemo_nodes</name>
-  <version>0.0.0</version>
+  <version>0.1.0</version>
   <description>Demo of a ros2 package with full integration of test, ci, quality, docs, etc.</description>
   <maintainer email="kent@caspia.com">R. Kent James</maintainer>
   <author email="kent@caspia.com">R. Kent James</author>
