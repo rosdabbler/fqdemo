@@ -1,14 +1,30 @@
 Package fqdemo_msgs
 ===================
 
-Documentation
+(TODO: include package description from package.xml)
+
+Custom message definitions accompanying fqdemo full quality demo template
+
+Message Definitions
+-------------------
+* :doc:`generated/msg/NumPwrData`
+* :doc:`generated/msg/NumPwrResult`
+  
+Project Documentation
 ---------------------
 
 .. toctree::
    :maxdepth: 2
    :glob:
 
-   doc/generated/*
+   *
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :glob:
+
+   generated/toc/*
 
 Indices and Search
 ------------------

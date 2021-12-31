@@ -1,16 +1,28 @@
-Metapackage fqdemo
-==================
+Package fqdemo
+==============
 
-Meta package to demo full-quality ros2 repo and packages
+Metapackage and repository for the fqdemo ROS2 demo packages.
 
-Documentation
+Packages
+--------
+* :doc:`generated/packages/fqdemo_msgs`
+* :doc:`generated/packages/fqdemo_nodes`
+
+Project Documentation
 ---------------------
 
 .. toctree::
    :maxdepth: 2
    :glob:
 
-   doc/generated/*
+   *
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :glob:
+
+   generated/toc/*
 
 Indices and Search
 ------------------
