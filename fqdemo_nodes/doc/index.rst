@@ -12,7 +12,7 @@ Package API
    :maxdepth: 2
 
    C++ API <generated/unabridged_api>
-   Python API <modules>
+   Python API <generated/python/modules>
 
 Project Documentation
 ---------------------
