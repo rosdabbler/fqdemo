@@ -1,7 +1,7 @@
 Package fqdemo
-==============
+===============================================================================
 
-Metapackage and repository for the fqdemo ROS2 demo packages.
+Metapackage as a demo of ros2 package and repo organization
 
 Packages
 --------

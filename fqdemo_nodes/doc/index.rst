@@ -1,7 +1,5 @@
 Package fqdemo_nodes
-====================
-
-(TODO: include package description from package.xml)
+===============================================================================
 
 Demo of a ros2 package with full integration of test, ci, quality, docs, etc.
 
