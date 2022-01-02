@@ -1,9 +1,8 @@
 Package fqdemo_msgs
-===================
-
-(TODO: include package description from package.xml)
+===============================================================================
 
 Custom message definitions accompanying fqdemo full quality demo template
+
 
 Message Definitions
 -------------------
