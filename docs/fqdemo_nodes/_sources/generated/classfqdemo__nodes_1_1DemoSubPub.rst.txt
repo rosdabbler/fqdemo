@@ -20,3 +20,6 @@ Class Documentation
 
 
 .. doxygenclass:: fqdemo_nodes::DemoSubPub
+   :members:
+   :protected-members:
+   :undoc-members:
