@@ -28,7 +28,7 @@ jobs:
         uses: ./.github/actions/rosdoc2
         with:
           rosdoc2_repo: "https://github.com/rkent/rosdoc2.git"
-          rosdoc2_branch: "prerun_conf_py"
+          rosdoc2_branch: "rkent/jinja-templates"
 
       - name: Update docs branch
         run: git add docs
