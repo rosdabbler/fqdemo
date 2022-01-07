@@ -106,7 +106,24 @@
 </section>
 <section id="repo-level-documentation">
 <h2>Repo-level documentation.<a class="headerlink" href="#repo-level-documentation" title="Permalink to this headline"></a></h2>
-<p>Looking at the <a class="reference external" href="https://index.ros.org">ROS index</a>, there is documentation there for both ROS packages as well as for the repositories that contain those packages. If you have a project that involves both nodes and packages, where do you document the entire project? This demo assumes that there needs to be documentation of the combined project, and that this documentation should reside in the repository that contains the individual packages. We want most of the documentation for the project to exist in a single location, so that means we want to use the ROS2 documentation tool <a class="reference external" href="https://github.com/ros-infrastructure/rosdoc2">rosdoc2</a> for that purpose. Since rosdoc2 is designed for packages only, that implies that the repository holding all of the packages is itself a package. So we make it a meta package.</p>
+<p>Looking at the <a class="reference external" href="https://index.ros.org">ROS index</a>, there is documentation there for both ROS packages as well as for the repositories that contain those packages. If you have a project that involves both nodes and packages, where do you document the entire project?</p>
+<p>I wanted to have a layout like this, but I could not make colcon accept this without constantly adding options to the call:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">workspace</span><span class="o">/</span>
+  <span class="n">src</span><span class="o">/</span>
+    <span class="n">fqdemo</span><span class="o">/</span>
+      <span class="o">.</span><span class="n">git</span><span class="o">/</span>
+      <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+      <span class="n">package</span><span class="o">.</span><span class="n">xml</span>
+      <span class="n">fqdemo_msgs</span><span class="o">/</span>
+        <span class="n">package</span><span class="o">.</span><span class="n">xml</span>
+      <span class="n">fqdemo_nodes</span><span class="o">/</span>
+        <span class="n">package</span><span class="o">.</span><span class="n">xml</span>
+      <span class="n">fqdemo</span><span class="o">/</span>
+        <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
+<p>So I went with this more traditional organization. But any documentation at the repo level (where the .git folder is) is not in a package, and will not be included with rosdoc2.</p>
+<p>I still don’t know how best to organize the repo-level documentation. I suppose the only way is to put it in the metapackage at src/fqdemo/fqdemo but I dislike that the repo has little documentation, and that I have to duplicate the name of the fqdemo directory.</p>
 </section>
 </section>
 
