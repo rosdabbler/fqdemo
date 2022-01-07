@@ -8,6 +8,14 @@ Packages
 * :doc:`generated/packages/fqdemo_msgs`
 * :doc:`generated/packages/fqdemo_nodes`
 
+.. only:: url_any
+
+   Links
+   -----
+   * `Repository <https://github.com/rosdabbler/fqdemo>`_
+   * `Website <https://rosdabbler.github.io/fqdemo/fqdemo>`_
+   * `Bugtracker <https://github.com/rosdabbler/fqdemo/issues>`_
+
 Project Documentation
 ---------------------
 

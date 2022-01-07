@@ -8,7 +8,8 @@
   <author email="kent@caspia.com">R. Kent James</author>
   <license>Apache 2</license>
   <url type="repository">https://github.com/rosdabbler/fqdemo</url>
-  <url type="website">https://rosdabbler.github.com/fqdemo/fqdemo_msgs</url>
+  <!-- demo that urls as unnumbered lists work with a missing url -->
+  <!--url type="website">https://rosdabbler.github.io/fqdemo/fqdemo_msgs</url-->
   <url type="bugtracker">https://github.com/rosdabbler/fqdemo/issues</url>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

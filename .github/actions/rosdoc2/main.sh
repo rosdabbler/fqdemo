@@ -17,4 +17,4 @@ cd $GITHUB_WORKSPACE
 
 rosdoc2 build --debug -o docs -u $BASE_URL -p ./fqdemo_msgs
 rosdoc2 build --debug -o docs -u $BASE_URL -p ./fqdemo_nodes
-rosdoc2 build --debug -o docs -u $BASE_URL -p ./
+rosdoc2 build --debug -o docs -u $BASE_URL -p ./fqdemo
