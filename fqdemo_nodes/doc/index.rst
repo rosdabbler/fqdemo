@@ -3,6 +3,14 @@ Package fqdemo_nodes
 
 Demo of a ros2 package with full integration of test, ci, quality, docs, etc.
 
+.. only:: url_any
+
+   Links
+   -----
+   * `Repository <https://github.com/rosdabbler/fqdemo>`_
+   * `Website <https://rosdabbler.github.io/fqdemo/fqdemo_nodes>`_
+   * `Bugtracker <https://github.com/rosdabbler/fqdemo/issues>`_
+
 Package API
 -----------
 
