@@ -31,6 +31,6 @@ jobs:
           rosdoc2_branch: "rkent/jinja-templates"
 
       - name: Update docs branch
-        run: git add docs
+        run: git add docs -f
       - run: git commit -m "Publish updated documents"
       - run: git push
