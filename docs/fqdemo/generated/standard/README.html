@@ -65,7 +65,19 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">README</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fqdemo">fqdemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fqdemo">fqdemo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#purpose">Purpose</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#testing">Testing</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#repo-organization">Repo organization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#package-collection">Package collection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#additional-directories">Additional directories</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -99,9 +111,46 @@
              
   <section id="readme">
 <h1>README<a class="headerlink" href="#readme" title="Permalink to this headline"></a></h1>
-<section class="tex2jax_ignore mathjax_ignore" id="fqdemo">
+<section id="fqdemo">
 <h2>fqdemo<a class="headerlink" href="#fqdemo" title="Permalink to this headline"></a></h2>
 <p>This is the metapackage for fqdemo, an exploration of how to structure a ros2 package.</p>
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline"></a></h3>
+<section id="documentation">
+<h4>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline"></a></h4>
+<p>This collection is a demo of the use of <a class="reference external" href="https://github.com/ros-infrastructure/rosdoc2">rosdoc2</a> to document a collection of packages. The official rosdoc2 is inadequate for this purpose, so we are using <a class="reference external" href="https://github.com/rkent/rosdoc2">this version.</a> Different branches may be in use, see .github/workflows/docs.yaml for the branch in use (<code class="docutils literal notranslate"><span class="pre">rosdoc2_branch:</span> <span class="pre">&quot;rkent/jinja-templates&quot;</span></code> as of this writing.)</p>
+</section>
+<section id="testing">
+<h4>Testing<a class="headerlink" href="#testing" title="Permalink to this headline"></a></h4>
+<p>The various ROS2 packages also contain tests that demonstrate the use of various ros2 testing features.</p>
+</section>
+</section>
+<section id="repo-organization">
+<h3>Repo organization<a class="headerlink" href="#repo-organization" title="Permalink to this headline"></a></h3>
+<section id="package-collection">
+<h4>Package collection<a class="headerlink" href="#package-collection" title="Permalink to this headline"></a></h4>
+<p>This git repo <strong>fqdemo</strong> is intended as an overall container for a set of related packages, which we will call a ‘related packages collection’. The actual functional packages are subdirectories under this repo.</p>
+<ul class="simple">
+<li><p>fqdemo: ROS2 metapackage that lists the full set of packages in the collection. It also contains documentation of the overall collection in its <code class="docutils literal notranslate"><span class="pre">doc</span></code> directory.</p></li>
+<li><p>fqdemo_msgs: ROS2 package with message and service definitions that are used by various packages in the collection. This is a separate package from the packages contains nodes, as in an environment with multiple compute environments (such as a robot that uses a desktop or cloud computer for more extensive calculations), the message and service definitions would be needed by both the local (robot) and the remote(cloud or desktop) environments, but the nodes themselves may have different setup needs. So it might not be possible, for example, to compile the cloud nodes on the robot, so we need separate packages for the different environments.</p></li>
+<li><p>fqdemo_nodes: Contains compute nodes. There may be many of these in a real, more complex collection.</p></li>
+</ul>
+<p>Typical ros2 workspace configuration would look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">workspace</span><span class="o">/</span>
+  <span class="n">src</span><span class="o">/</span>
+    <span class="n">fqdemo</span><span class="o">/</span>
+      <span class="n">fqdemo</span><span class="o">/</span>
+      <span class="n">fqdemo_msgs</span><span class="o">/</span>
+      <span class="n">fqdemo_nodes</span><span class="o">/</span>
+    <span class="n">some_other_unrelated_package_or_collection</span><span class="o">/</span>
+</pre></div>
+</div>
+</section>
+<section id="additional-directories">
+<h4>Additional directories<a class="headerlink" href="#additional-directories" title="Permalink to this headline"></a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">docs</span></code> and <code class="docutils literal notranslate"><span class="pre">.github</span></code> directories contain files necessary to the automatic publishing of collection documentation on github pages.</p>
+</section>
+</section>
 </section>
 </section>
 

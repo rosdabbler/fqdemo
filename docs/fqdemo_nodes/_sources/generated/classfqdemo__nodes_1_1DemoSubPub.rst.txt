@@ -20,6 +20,7 @@ Class Documentation
 
 
 .. doxygenclass:: fqdemo_nodes::DemoSubPub
+   :project: fqdemo_nodes Doxygen Project
    :members:
    :protected-members:
    :undoc-members:
