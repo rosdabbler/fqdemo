@@ -51,6 +51,3 @@ fqdemo_nodes/doc/generated
 fqdemo_msgs/generated
 ./generated
 
-# doc files generated from templates
-conf_generated.py
-index_generated.rst

@@ -20,7 +20,8 @@ sys.path.insert(0, os.path.abspath('../fqdemo_nodes'))
 # -- Project information -----------------------------------------------------
 
 project = 'fqdemo_nodes'
-copyright = '2021, R. Kent James <kent@caspia.com>'
+import time
+copyright = time.strftime('%Y') + ', R. Kent James'
 author = 'R. Kent James'
 
 # The full version, including alpha/beta/rc tags
@@ -38,9 +39,9 @@ version = '0.1'
 ## do not add them here, as well as others, perhaps.
 ## If you add them manually rosdoc2 may still try to configure them.
 ## See the rosdoc2_settings below for some options on avoiding that.
-extensions = [
-    'sphinx_rtd_theme',
-]
+#extensions = [
+#    'sphinx_rtd_theme',
+#]
 
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['/home/kent/ros2_wses/fqdemo_ws/src/fqdemo_nodes/_templates']

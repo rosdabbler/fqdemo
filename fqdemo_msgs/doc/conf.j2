@@ -20,14 +20,15 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'fqdemo_msgs'
-copyright = '2021, R. Kent James <kent@caspia.com>'
-author = 'R. Kent James <kent@caspia.com>'
+project = '{{ package.name }}'
+import time
+copyright = time.strftime('%Y') + ', {{ package_authors }}'
+author = '{{ package_authors }}'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.0'
+release = '{{ package.version }}'
 
-version = '0.0'
+version = '{{ package_version_short }}'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,9 +40,9 @@ version = '0.0'
 ## do not add them here, as well as others, perhaps.
 ## If you add them manually rosdoc2 may still try to configure them.
 ## See the rosdoc2_settings below for some options on avoiding that.
-extensions = [
-    'sphinx_rtd_theme',
-]
+#extensions = [
+#    'sphinx_rtd_theme',
+#]
 
 # Add any paths that contain templates here, relative to this directory.
 import os

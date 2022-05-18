@@ -21,13 +21,14 @@
 # -- Project information -----------------------------------------------------
 
 project = 'fqdemo'
-copyright = '2021, R. Kent James <kent@caspia.com>'
-author = 'R. Kent James <kent@caspia.com>'
+import time
+copyright = time.strftime('%Y') + ', R. Kent James'
+author = 'R. Kent James'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.0'
+release = '0.1.0'
 
-version = '0.0'
+version = '0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,9 +40,9 @@ version = '0.0'
 ## do not add them here, as well as others, perhaps.
 ## If you add them manually rosdoc2 may still try to configure them.
 ## See the rosdoc2_settings below for some options on avoiding that.
-extensions = [
-    'sphinx_rtd_theme',
-]
+#extensions = [
+#    'sphinx_rtd_theme',
+#]
 
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['/home/kent/ros2_wses/fqdemo_ws/src/fqdemo_nodes/_templates']
