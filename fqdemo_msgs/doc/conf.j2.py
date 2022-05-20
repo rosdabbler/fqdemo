@@ -20,15 +20,15 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'fqdemo_msgs'
+project = '{{ package.name }}'
 import time
-copyright = time.strftime('%Y') + ', R. Kent James'
-author = 'R. Kent James'
+copyright = time.strftime('%Y') + ', {{ package_authors }}'
+author = '{{ package_authors }}'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.0'
+release = '{{ package.version }}'
 
-version = '0.1'
+version = '{{ package_version_short }}'
 
 
 # -- General configuration ---------------------------------------------------
@@ -46,7 +46,7 @@ version = '0.1'
 
 # Add any paths that contain templates here, relative to this directory.
 import os
-print(f'PWD: {os.getcwd()}')
+logger.debug(f'running Sphinx conf in directory {os.getcwd()}')
 templates_path = ['_templates']
 
 master_doc = 'index'

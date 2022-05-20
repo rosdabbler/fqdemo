@@ -13,22 +13,21 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../fqdemo_nodes'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'fqdemo'
+project = '{{ package.name }}'
 import time
-copyright = time.strftime('%Y') + ', R. Kent James'
-author = 'R. Kent James'
+copyright = time.strftime('%Y') + ', {{ package_authors }}'
+author = '{{ package_authors }}'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.0'
+release = '{{ package.version }}'
 
-version = '0.1'
+version = '{{ package_version_short }}'
 
 
 # -- General configuration ---------------------------------------------------
@@ -47,7 +46,7 @@ version = '0.1'
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['/home/kent/ros2_wses/fqdemo_ws/src/fqdemo_nodes/_templates']
 import os
-print(f'PWD: {os.getcwd()}')
+logger.debug(f'Running Sphinx conf in directory {os.getcwd()}.')
 templates_path = ['_templates']
 
 # List of patterns, relative to source directory, that match files and
@@ -56,6 +55,16 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 master_doc = 'index'
+
+# This setting allows references like `SomeClassName` to work without having
+# to explicitly specify :py:class:`SomeClassName`
+default_role = 'any'
+
+# breathe configuration
+breathe_default_members = ('members',
+# 'undoc-members',
+# 'private-members',
+)
 
 source_suffix = {
     '.rst': 'restructuredtext',
@@ -98,12 +107,12 @@ rosdoc2_settings = {
     ## This setting, if True, will ensure breathe is part of the 'extensions',
     ## and will set all of the breathe configurations, if not set, and override
     ## settings as needed if they are set by this configuration.
-    'enable_breathe': False,
+    # 'enable_breathe': True,
 
     ## This setting, if True, will ensure exhale is part of the 'extensions',
     ## and will set all of the exhale configurations, if not set, and override
     ## settings as needed if they are set by this configuration.
-    'enable_exhale': False,
+    # 'enable_exhale': True,
 
     ## This setting, if True, will ensure intersphinx is part of the 'extensions'.
     # 'enable_intersphinx': True,
