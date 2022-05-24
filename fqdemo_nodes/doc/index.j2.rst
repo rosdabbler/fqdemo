@@ -17,7 +17,7 @@ Package API
 .. toctree::
    :maxdepth: 2
 
-   C++ API <generated/unabridged_api>
+   C++ API <generated/index>
    Python API <generated/python/modules>
 
 Project Documentation
