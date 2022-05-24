@@ -43,7 +43,7 @@
 # doxygen and/or rosdoc2
 docs_build
 cross_reference
-docs
+docs/*
 
 # rosdoc2 sphinx/exhale output folder
 fqdemo_nodes/generated

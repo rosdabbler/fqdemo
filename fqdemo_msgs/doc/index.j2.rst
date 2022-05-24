@@ -1,7 +1,7 @@
 Package {{ package.name }}
 ===============================================================================
 
-{{ package.description }}
+{{ package_description }}
 
 .. only:: url_any
 
