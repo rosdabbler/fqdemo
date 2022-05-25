@@ -20,17 +20,10 @@ Project Documentation
 ---------------------
 
 .. toctree::
-   :maxdepth: 2
-   :glob:
-
-   *
-
-.. toctree::
-   :hidden:
    :maxdepth: 1
    :glob:
 
-   generated/toc/*
+   *
 
 Indices and Search
 ------------------
