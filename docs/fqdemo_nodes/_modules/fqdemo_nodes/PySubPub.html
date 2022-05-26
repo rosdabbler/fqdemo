@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fqdemo_nodes.PySubPub &mdash; fqdemo_nodes 0.1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> fqdemo_nodes
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/index.html">C++ API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/index.html#reference">Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/namespace_fqdemo_nodes.html">Namespace fqdemo_nodes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/namespace_fqdemo_nodes.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/classfqdemo__nodes_1_1DemoSubPub.html">Class DemoSubPub</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/classfqdemo__nodes_1_1DemoSubPub.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../generated/classfqdemo__nodes_1_1DemoSubPub.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/classfqdemo__nodes_1_1DemoSubPub.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/function_subpub__node_8hpp_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/function_subpub__node_8hpp_1a3c04138a5bfe5d72780bb7e82a18e627.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/dir_include.html">Directory include</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/dir_include.html#subdirectories">Subdirectories</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/dir_include_fqdemo_nodes.html">Directory fqdemo_nodes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/dir_include_fqdemo_nodes.html#files">Files</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/dir_src.html">Directory src</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/dir_src.html#files">Files</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/file_src_demo_sub_pub.cpp.html">File demo_sub_pub.cpp</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_src_demo_sub_pub.cpp.html#definition-src-demo-sub-pub-cpp">Definition (<code class="docutils literal notranslate"><span class="pre">src/demo_sub_pub.cpp</span></code>)</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../generated/program_listing_file_src_demo_sub_pub.cpp.html">Program Listing for File demo_sub_pub.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_src_demo_sub_pub.cpp.html#includes">Includes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_src_demo_sub_pub.cpp.html#namespaces">Namespaces</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_demo_sub_pub.hpp.html">File demo_sub_pub.hpp</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_demo_sub_pub.hpp.html#definition-include-fqdemo-nodes-demo-sub-pub-hpp">Definition (<code class="docutils literal notranslate"><span class="pre">include/fqdemo_nodes/demo_sub_pub.hpp</span></code>)</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../generated/program_listing_file_include_fqdemo_nodes_demo_sub_pub.hpp.html">Program Listing for File demo_sub_pub.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_demo_sub_pub.hpp.html#includes">Includes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_demo_sub_pub.hpp.html#included-by">Included By</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_demo_sub_pub.hpp.html#namespaces">Namespaces</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_demo_sub_pub.hpp.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/file_src_subpub_node.cpp.html">File subpub_node.cpp</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_src_subpub_node.cpp.html#definition-src-subpub-node-cpp">Definition (<code class="docutils literal notranslate"><span class="pre">src/subpub_node.cpp</span></code>)</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../generated/program_listing_file_src_subpub_node.cpp.html">Program Listing for File subpub_node.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_src_subpub_node.cpp.html#includes">Includes</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_subpub_node.hpp.html">File subpub_node.hpp</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_subpub_node.hpp.html#definition-include-fqdemo-nodes-subpub-node-hpp">Definition (<code class="docutils literal notranslate"><span class="pre">include/fqdemo_nodes/subpub_node.hpp</span></code>)</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../generated/program_listing_file_include_fqdemo_nodes_subpub_node.hpp.html">Program Listing for File subpub_node.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_subpub_node.hpp.html#included-by">Included By</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/file_include_fqdemo_nodes_subpub_node.hpp.html#functions">Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/python/modules.html">Python API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/python/fqdemo_nodes.html">fqdemo_nodes package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/python/fqdemo_nodes.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/python/fqdemo_nodes.PySubPub.html">fqdemo_nodes.PySubPub module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../generated/python/fqdemo_nodes.PySubPub.html#overview">Overview</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/python/fqdemo_nodes.html#module-fqdemo_nodes">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mdtest.html">Test of markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../standard/CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../standard/CHANGELOG.html#id1">Changelog</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../standard/CONTRIBUTING.html">CONTRIBUTING</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../standard/CONTRIBUTING.html#contributing">Contributing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../standard/LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../standard/README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../standard/README.html#fqdemo-nodes">fqdemo_nodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../standard/README.html#purpose-of-the-set-of-fqdemo-packages">Purpose of the set of <em>fqdemo</em> packages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../standard/README.html#use-of-this-package">Use of this package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../standard/README.html#building-the-documentation">Building the documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    <li class="toctree-l1"><a class="reference internal" href="../../genindex.html">INDEX</a></li>
+  
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">fqdemo_nodes</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+          <li><a href="../fqdemo_nodes.html">fqdemo_nodes</a> &raquo;</li>
+      <li>fqdemo_nodes.PySubPub</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for fqdemo_nodes.PySubPub</h1><div class="highlight"><pre>
+<span></span><span class="c1">#</span>
+<span class="c1">#   Copyright 2021 R. Kent James &lt;kent@caspia.com&gt;</span>
+<span class="c1">#</span>
+<span class="c1">#   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="c1">#   you may not use this file except in compliance with the License.</span>
+<span class="c1">#   You may obtain a copy of the License at</span>
+<span class="c1">#</span>
+<span class="c1">#       http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="c1">#</span>
+<span class="c1">#   Unless required by applicable law or agreed to in writing, software</span>
+<span class="c1">#   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="c1">#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="c1">#   See the License for the specific language governing permissions and</span>
+<span class="c1">#   limitations under the License.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">(This is module-level documentation for PySubPub. This docstring must be inserted</span>
+<span class="sd">before any code in the module.)</span>
+
+<span class="sd">Overview</span>
+<span class="sd">========</span>
+<span class="sd">This module contains a single class which creates a ROS2 node.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="kn">from</span> <span class="nn">fqdemo_msgs.msg</span> <span class="kn">import</span> <span class="n">NumPwrData</span><span class="p">,</span> <span class="n">NumPwrResult</span>
+<span class="kn">import</span> <span class="nn">rclpy</span>
+<span class="kn">from</span> <span class="nn">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span>
+
+<span class="n">TIMER_PERIOD_SECONDS</span> <span class="o">=</span> <span class="mf">0.5</span>
+
+<div class="viewcode-block" id="PySubPub"><a class="viewcode-back" href="../../generated/python/fqdemo_nodes.PySubPub.html#fqdemo_nodes.PySubPub.PySubPub">[docs]</a><span class="k">class</span> <span class="nc">PySubPub</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Node to simulate a sample filter to an incoming topic, publishing result.</span>
+
+<span class="sd">    Listens for a message with a number and power. Publishes a message with that number to that</span>
+<span class="sd">    power, and to that root. Part of a demonstration of a ROS2 package with supporting quality</span>
+<span class="sd">    features.</span>
+
+<span class="sd">    **Node Name**: ``py_node``</span>
+
+<span class="sd">    **Topics Subscribed**</span>
+
+<span class="sd">    * ``num_power`` (type :py:class:`NumPwrData`)</span>
+<span class="sd">        Requests from package users to calculate a power and root.</span>
+
+<span class="sd">    **Topics Published**</span>
+
+<span class="sd">    * ``power_result`` (type :py:class:`fqdemo_msgs:fqdemo_msgs.msg.NumPwrResult`)</span>
+<span class="sd">        Message is published either in response to an incoming ``num_power``</span>
+<span class="sd">        NumPwrResult message, or a message with zeros is published periodically.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Constructor method&quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;pysubpub&#39;</span><span class="p">)</span>
+
+        <span class="c1">#: Publisher for topic *power_result* type NumPwrResult</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_publisher</span><span class="p">(</span><span class="n">NumPwrResult</span><span class="p">,</span> <span class="s1">&#39;power_result&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+        <span class="c1">#: Subscriber for topic *num_power* type NumPwrData</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">subscriber</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_subscription</span><span class="p">(</span>
+          <span class="n">NumPwrData</span><span class="p">,</span> <span class="s1">&#39;num_power&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">topic_callback</span><span class="p">,</span> <span class="mi">10</span>
+        <span class="p">)</span>
+
+        <span class="c1">#: Timer that fires periodically to generate a zero response</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_timer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_timer</span><span class="p">(</span><span class="n">TIMER_PERIOD_SECONDS</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_timer_callback</span><span class="p">)</span>
+
+<div class="viewcode-block" id="PySubPub.apply_powers"><a class="viewcode-back" href="../../generated/python/fqdemo_nodes.PySubPub.html#fqdemo_nodes.PySubPub.PySubPub.apply_powers">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">apply_powers</span><span class="p">(</span>
+        <span class="n">number</span><span class="p">,</span> <span class="n">exponent</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Given a number and an exponent, calculate its power and root.</span>
+
+<span class="sd">        :param float number: Base value to take to a power or root</span>
+<span class="sd">        :param float exponent: Value to use as exponent for power or root</span>
+<span class="sd">        :return: Result of (pow(number, exponent), pow(number, 1./exponent))</span>
+<span class="sd">        :rtype: tuple(float, float)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">to_power</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">exponent</span><span class="p">)</span>
+        <span class="n">to_root</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="mf">1.</span> <span class="o">/</span> <span class="n">exponent</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">((</span><span class="n">to_power</span><span class="p">,</span> <span class="n">to_root</span><span class="p">))</span></div>
+
+    <span class="k">def</span> <span class="nf">_timer_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; callback for a periodic timer, publishes a zero message &quot;&quot;&quot;</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">NumPwrResult</span><span class="p">()</span>
+        <span class="n">msg</span><span class="o">.</span><span class="n">to_power</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">msg</span><span class="o">.</span><span class="n">to_root</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Publishing to_power: </span><span class="si">{</span><span class="n">msg</span><span class="o">.</span><span class="n">to_power</span><span class="si">}</span><span class="s1">, to_root: </span><span class="si">{</span><span class="n">msg</span><span class="o">.</span><span class="n">to_root</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="PySubPub.topic_callback"><a class="viewcode-back" href="../../generated/python/fqdemo_nodes.PySubPub.html#fqdemo_nodes.PySubPub.PySubPub.topic_callback">[docs]</a>    <span class="k">def</span> <span class="nf">topic_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> 
+          <span class="n">msg</span><span class="p">:</span><span class="n">NumPwrData</span>
+        <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; callback for subscription to num_power &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;I heard </span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">response_msg</span> <span class="o">=</span> <span class="n">NumPwrResult</span><span class="p">()</span>
+        <span class="p">(</span><span class="n">response_msg</span><span class="o">.</span><span class="n">to_power</span><span class="p">,</span> <span class="n">response_msg</span><span class="o">.</span><span class="n">to_root</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">apply_powers</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">num</span><span class="p">,</span> <span class="n">msg</span><span class="o">.</span><span class="n">power</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">response_msg</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s1">&#39;Publishing to_power: </span><span class="si">{</span><span class="n">response_msg</span><span class="o">.</span><span class="n">to_power</span><span class="si">}</span><span class="s1">, to_root: </span><span class="si">{</span><span class="n">response_msg</span><span class="o">.</span><span class="n">to_root</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="PySubPub.run"><a class="viewcode-back" href="../../generated/python/fqdemo_nodes.PySubPub.html#fqdemo_nodes.PySubPub.PySubPub.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; main program for the node &quot;&quot;&quot;</span>
+        <span class="c1"># run the node, teardown when done</span>
+        <span class="n">rclpy</span><span class="o">.</span><span class="n">spin</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">destroy_node</span><span class="p">()</span></div></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">rclpy</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+    <span class="n">pySubPub</span> <span class="o">=</span> <span class="n">PySubPub</span><span class="p">()</span>
+    <span class="n">pySubPub</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+    <span class="n">rclpy</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, R. Kent James  (under license(s) Apache License 2.0).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

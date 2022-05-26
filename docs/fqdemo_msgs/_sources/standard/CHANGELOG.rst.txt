@@ -1,0 +1,4 @@
+CHANGELOG
+)))))))))
+
+.. include:: ../../../../fqdemo_msgs/CHANGELOG.rst

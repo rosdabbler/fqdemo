@@ -14,8 +14,8 @@ Custom message definitions accompanying fqdemo full quality demo template
 
 Message Definitions
 -------------------
-* :doc:`generated/msg/NumPwrData`
-* :doc:`generated/msg/NumPwrResult`
+* :doc:`msg/NumPwrData`
+* :doc:`msg/NumPwrResult`
   
 Project Documentation
 ---------------------
