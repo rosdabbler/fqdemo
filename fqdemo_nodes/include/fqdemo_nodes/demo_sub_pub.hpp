@@ -38,7 +38,7 @@ namespace fqdemo_nodes
   power and root of that exponent.
 
   @rstb
-  **Topics Subscribed**: ``num_power`` (type :py:class:`NumPwrData`): Publishes a message to `/power_result`
+  **Topics Subscribed**: ``num_power`` (type :py:class:`NumPwrData`): Publishes a message to topic ``/power_result``
   after message is received.
   @endrst
 

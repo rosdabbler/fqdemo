@@ -14,8 +14,8 @@ Package {{ package.name }}
 
 Message Definitions
 -------------------
-* :doc:`generated/msg/NumPwrData`
-* :doc:`generated/msg/NumPwrResult`
+* :doc:`msg/NumPwrData`
+* :doc:`msg/NumPwrResult`
   
 Project Documentation
 ---------------------

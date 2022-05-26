@@ -7,4 +7,4 @@ This is a ROS message type.
 
 **Source**
 
-.. literalinclude:: ../../../msg/NumPwrResult.msg
+.. literalinclude:: ../../../../fqdemo_msgs/msg/NumPwrResult.msg
