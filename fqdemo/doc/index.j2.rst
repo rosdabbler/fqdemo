@@ -5,8 +5,8 @@ Package {{ package.name }}
 
 Packages
 --------
-* :doc:`generated/packages/fqdemo_msgs`
-* :doc:`generated/packages/fqdemo_nodes`
+* :doc:`Package named fqdemo_nodes <fqdemo_nodes:index>`
+* :doc:`fqdemo_msgs:index`
 
 .. only:: url_any
 

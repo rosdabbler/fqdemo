@@ -34,9 +34,6 @@ Project Documentation
    :maxdepth: 1
    :glob:
 
-   generated/toc/*
-
-
 Indices and Search
 ------------------
 

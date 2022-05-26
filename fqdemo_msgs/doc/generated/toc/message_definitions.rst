@@ -5,4 +5,4 @@ Message Definitions
    :maxdepth: 0
    :glob:
 
-   ../msg/*
+   ../../msg/*
