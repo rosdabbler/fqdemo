@@ -42,6 +42,6 @@
 
 # doxygen and/or rosdoc2
 docs_build
+docs_output
 cross_reference
-docs/*
-
+docs/*/
