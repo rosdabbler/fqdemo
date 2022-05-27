@@ -1,12 +1,6 @@
 About
 =====
 
-Fqdemo is a project to demonstrate organization of a repository and associated packages to work with `ROS2 <https://docs.ros.org/en/rolling/>`_.
-
-Some of the issues considered here are:
-
-- testing, including linting, python, and cpp tests.
-- repository organization
-- documentation
-- use of github actions to automate testing and documentation
-
+rosdabbler (that's me, R. Kent James) is a name I use to publish
+material on ROS that may be of interest to others. My main
+github repository is under the name rkent.
