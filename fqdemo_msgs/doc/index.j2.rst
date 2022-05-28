@@ -8,15 +8,17 @@ Package {{ package.name }}
    Links
    -----
    {{ url_repository }}
-   {{ url_website }}
+   {{ url_website }} 
    {{ url_bugtracker }}
-
 
 Message Definitions
 -------------------
-* :doc:`msg/NumPwrData`
-* :doc:`msg/NumPwrResult`
-  
+
+.. toctree::
+   :maxdepth: 2
+
+   interfaces/message_definitions
+
 Project Documentation
 ---------------------
 
@@ -25,13 +27,6 @@ Project Documentation
    :glob:
 
    *
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :glob:
-
-   generated/toc/*
 
 Indices and Search
 ------------------
