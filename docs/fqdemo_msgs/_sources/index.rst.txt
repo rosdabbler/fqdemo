@@ -8,15 +8,17 @@ Custom message definitions accompanying fqdemo full quality demo template
    Links
    -----
    * `Repository <https://github.com/rosdabbler/fqdemo>`_
-   
+    
    * `Bugtracker <https://github.com/rosdabbler/fqdemo/issues>`_
-
 
 Message Definitions
 -------------------
-* :doc:`msg/NumPwrData`
-* :doc:`msg/NumPwrResult`
-  
+
+.. toctree::
+   :maxdepth: 2
+
+   interfaces/message_definitions
+
 Project Documentation
 ---------------------
 
@@ -25,13 +27,6 @@ Project Documentation
    :glob:
 
    *
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :glob:
-
-   generated/toc/*
 
 Indices and Search
 ------------------

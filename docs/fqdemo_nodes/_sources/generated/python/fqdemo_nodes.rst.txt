@@ -1,6 +1,11 @@
 fqdemo\_nodes package
 =====================
 
+.. automodule:: fqdemo_nodes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Submodules
 ----------
 
@@ -8,11 +13,3 @@ Submodules
    :maxdepth: 4
 
    fqdemo_nodes.PySubPub
-
-Module contents
----------------
-
-.. automodule:: fqdemo_nodes
-   :members:
-   :undoc-members:
-   :show-inheritance:
