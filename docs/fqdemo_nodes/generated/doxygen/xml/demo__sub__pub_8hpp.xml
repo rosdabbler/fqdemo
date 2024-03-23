@@ -1,20 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="demo__sub__pub_8hpp" kind="file" language="C++">
     <compoundname>demo_sub_pub.hpp</compoundname>
     <includes local="no">tuple</includes>
     <includes local="yes">rclcpp/rclcpp.hpp</includes>
     <includes local="yes">fqdemo_msgs/msg/num_pwr_result.hpp</includes>
     <includes local="yes">fqdemo_msgs/msg/num_pwr_data.hpp</includes>
-    <includedby refid="demo__sub__pub_8cpp" local="yes">src/demo_sub_pub.cpp</includedby>
-    <includedby refid="subpub__node_8cpp" local="yes">src/subpub_node.cpp</includedby>
     <incdepgraph>
-      <node id="4">
-        <label>fqdemo_msgs/msg/num_pwr_result.hpp</label>
-      </node>
-      <node id="3">
-        <label>rclcpp/rclcpp.hpp</label>
-      </node>
       <node id="1">
         <label>include/fqdemo_nodes/demo_sub_pub.hpp</label>
         <link refid="demo__sub__pub_8hpp"/>
@@ -27,11 +19,17 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="2">
-        <label>tuple</label>
-      </node>
       <node id="5">
         <label>fqdemo_msgs/msg/num_pwr_data.hpp</label>
+      </node>
+      <node id="4">
+        <label>fqdemo_msgs/msg/num_pwr_result.hpp</label>
+      </node>
+      <node id="3">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="2">
+        <label>tuple</label>
       </node>
     </incdepgraph>
     <innerclass refid="classfqdemo__nodes_1_1DemoSubPub" prot="public">fqdemo_nodes::DemoSubPub</innerclass>
@@ -73,17 +71,17 @@
 <codeline lineno="52"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub" kindref="compound">DemoSubPub</ref>();</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classfqdemo__nodes_1_1DemoSubPub" kindref="compound">DemoSubPub</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub" kindref="compound">~DemoSubPub</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::tuple&lt;double,<sp/>double&gt;<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a957376ca2d36b9dca22c457dfbb869d5" kindref="member">apply_powers</ref>(</highlight></codeline>
+<codeline lineno="58" refid="classfqdemo__nodes_1_1DemoSubPub_1a1b5264352aaa2ba44d31dc1d3657f0e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::tuple&lt;double,<sp/>double&gt;<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a1b5264352aaa2ba44d31dc1d3657f0e5" kindref="member">apply_powers</ref>(</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>double_t<sp/>number,<sp/><sp/></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>exponent<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/>);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" kindref="member">topic_callback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>fqdemo_msgs::msg::NumPwrData::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="68" refid="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a0ab3790062646d026425c179f5536d9c" kindref="member">topic_callback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>fqdemo_msgs::msg::NumPwrData::SharedPtr<sp/>msg);</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" kindref="member">timer_callback</ref>();</highlight></codeline>
+<codeline lineno="71" refid="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" kindref="member">timer_callback</ref>();</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74" refid="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" refkind="member"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;fqdemo_msgs::msg::NumPwrData&gt;::SharedPtr<sp/><ref refid="classfqdemo__nodes_1_1DemoSubPub_1a7f5b2a5ef9c22ccb8aa55176eeec371e" kindref="member">subscriber_</ref>;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>

@@ -1,4 +1,0 @@
-LICENSE
-)))))))
-
-.. literalinclude:: ../../../../fqdemo/LICENSE

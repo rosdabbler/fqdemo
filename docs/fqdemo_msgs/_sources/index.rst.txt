@@ -1,23 +1,18 @@
+.. GENERATED_CONTENT by rosdoc2.verbs.build.builders.SphinxBuilder.
+
 Package fqdemo_msgs
-===============================================================================
+===================
 
 Custom message definitions accompanying fqdemo full quality demo template
 
-.. only:: url_any
 
-   Links
-   -----
-   * `Repository <https://github.com/rosdabbler/fqdemo>`_
-    
-   * `Bugtracker <https://github.com/rosdabbler/fqdemo/issues>`_
+Links
+-----
+* `Repository <https://github.com/rosdabbler/fqdemo>`_
 
-Message Definitions
--------------------
+* `Bugtracker <https://github.com/rosdabbler/fqdemo/issues>`_
 
-.. toctree::
-   :maxdepth: 2
-
-   interfaces/message_definitions
+ 
 
 Project Documentation
 ---------------------
@@ -27,9 +22,31 @@ Project Documentation
    :glob:
 
    *
+   
 
-Indices and Search
+
+Standard Documents
 ------------------
+.. toctree::
+   :maxdepth: 2
+   :glob:
 
-* :ref:`genindex`
-* :ref:`search`
+   generated/standards
+
+
+Package API
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   
+   
+   generated/message_definitions
+   
+
+
+.. toctree::
+   :hidden:
+
+   generated/index_and_search

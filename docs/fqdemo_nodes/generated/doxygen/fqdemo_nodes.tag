@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.1">
+<tagfile doxygen_version="1.9.4">
   <compound kind="file">
     <name>demo_sub_pub.hpp</name>
     <path>/github/workspace/fqdemo_nodes/include/fqdemo_nodes/</path>
@@ -40,7 +40,7 @@
       <type>static std::tuple&lt; double, double &gt;</type>
       <name>apply_powers</name>
       <anchorfile>classfqdemo__nodes_1_1DemoSubPub.html</anchorfile>
-      <anchor>a957376ca2d36b9dca22c457dfbb869d5</anchor>
+      <anchor>a1b5264352aaa2ba44d31dc1d3657f0e5</anchor>
       <arglist>(const double_t number, const double exponent)</arglist>
     </member>
     <member kind="variable">

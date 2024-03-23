@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="classfqdemo__nodes_1_1DemoSubPub" kind="class" language="C++" prot="public">
     <compoundname>fqdemo_nodes::DemoSubPub</compoundname>
     <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
@@ -10,6 +10,7 @@
         <definition>rclcpp::Subscription&lt;fqdemo_msgs::msg::NumPwrData&gt;::SharedPtr fqdemo_nodes::DemoSubPub::subscriber_</definition>
         <argsstring></argsstring>
         <name>subscriber_</name>
+        <qualifiedname>fqdemo_nodes::DemoSubPub::subscriber_</qualifiedname>
         <briefdescription>
 <para>subscription object for NumPwrData messages </para>
         </briefdescription>
@@ -24,6 +25,7 @@
         <definition>rclcpp::TimerBase::SharedPtr fqdemo_nodes::DemoSubPub::timer_</definition>
         <argsstring></argsstring>
         <name>timer_</name>
+        <qualifiedname>fqdemo_nodes::DemoSubPub::timer_</qualifiedname>
         <briefdescription>
 <para>periodic timter to generate some active output even if nothing incoming </para>
         </briefdescription>
@@ -38,6 +40,7 @@
         <definition>rclcpp::Publisher&lt;fqdemo_msgs::msg::NumPwrResult&gt;::SharedPtr fqdemo_nodes::DemoSubPub::publisher_</definition>
         <argsstring></argsstring>
         <name>publisher_</name>
+        <qualifiedname>fqdemo_nodes::DemoSubPub::publisher_</qualifiedname>
         <briefdescription>
 <para>publishes the results of apply_powers on the incoming message </para>
         </briefdescription>
@@ -52,6 +55,7 @@
         <definition>size_t fqdemo_nodes::DemoSubPub::count_</definition>
         <argsstring></argsstring>
         <name>count_</name>
+        <qualifiedname>fqdemo_nodes::DemoSubPub::count_</qualifiedname>
         <briefdescription>
 <para>counter used to display number of timer messages sent </para>
         </briefdescription>
@@ -68,19 +72,21 @@
         <definition>fqdemo_nodes::DemoSubPub::DemoSubPub</definition>
         <argsstring>()</argsstring>
         <name>DemoSubPub</name>
+        <qualifiedname>fqdemo_nodes::DemoSubPub::DemoSubPub</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="54" column="3" bodyfile="src/demo_sub_pub.cpp" bodystart="37" bodyend="46"/>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="54" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classfqdemo__nodes_1_1DemoSubPub_1a8699d4237b5c9cd83461974d65ef0434" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
         <definition>virtual fqdemo_nodes::DemoSubPub::~DemoSubPub</definition>
         <argsstring>()</argsstring>
         <name>~DemoSubPub</name>
+        <qualifiedname>fqdemo_nodes::DemoSubPub::~DemoSubPub</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -94,6 +100,7 @@
         <definition>void fqdemo_nodes::DemoSubPub::topic_callback</definition>
         <argsstring>(const fqdemo_msgs::msg::NumPwrData::SharedPtr msg)</argsstring>
         <name>topic_callback</name>
+        <qualifiedname>fqdemo_nodes::DemoSubPub::topic_callback</qualifiedname>
         <param>
           <type>const fqdemo_msgs::msg::NumPwrData::SharedPtr</type>
           <declname>msg</declname>
@@ -114,13 +121,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="68" column="8" bodyfile="src/demo_sub_pub.cpp" bodystart="58" bodyend="69"/>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="68" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classfqdemo__nodes_1_1DemoSubPub_1acb690d3185c0f74656a97b98cef9246a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void fqdemo_nodes::DemoSubPub::timer_callback</definition>
         <argsstring>()</argsstring>
         <name>timer_callback</name>
+        <qualifiedname>fqdemo_nodes::DemoSubPub::timer_callback</qualifiedname>
         <briefdescription>
 <para>called periodically to generate a default response </para>
         </briefdescription>
@@ -128,15 +136,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="71" column="8" bodyfile="src/demo_sub_pub.cpp" bodystart="71" bodyend="80"/>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="71" column="8"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classfqdemo__nodes_1_1DemoSubPub_1a957376ca2d36b9dca22c457dfbb869d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classfqdemo__nodes_1_1DemoSubPub_1a1b5264352aaa2ba44d31dc1d3657f0e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::tuple&lt; double, double &gt;</type>
-        <definition>std::tuple&lt; double, double &gt; fqdemo_nodes::DemoSubPub::apply_powers</definition>
+        <definition>static std::tuple&lt; double, double &gt; fqdemo_nodes::DemoSubPub::apply_powers</definition>
         <argsstring>(const double_t number, const double exponent)</argsstring>
         <name>apply_powers</name>
+        <qualifiedname>fqdemo_nodes::DemoSubPub::apply_powers</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>number</declname>
@@ -156,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="58" column="21" bodyfile="src/demo_sub_pub.cpp" bodystart="48" bodyend="56"/>
+        <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="58" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -164,11 +173,8 @@
     <detaileddescription>
 <para>A demonstration of a simple ROS2 node that raises numbers to a power and root</para>
 <para>This node is used as a demo of how to setup a folder for a package, including various things like documentation and testing. The node itself listens to a custom message that contains a number and an exponent, then publishes a message with the number taken to the power and root of that exponent.</para>
-<para><verbatim>embed:rst
-**Topics Subscribed**: ``num_power`` (type :py:class:`NumPwrData`): Publishes a message to topic ``/power_result``
-after message is received.
-</verbatim></para>
-<para><bold>Topics Published:</bold> <computeroutput>power_result</computeroutput> (type<verbatim>embed:rst:inline `NumPwrResult` </verbatim> ). A zero-valued message is published periodically. A message with appropriate values is published in response to a /num_power message. </para>
+<para>@rstb Topics Subscribed**: <computeroutput>num_power</computeroutput> (type :py:class:<computeroutput>NumPwrData</computeroutput>): Publishes a message to topic <computeroutput>/power_result</computeroutput> after message is received. @endrst</para>
+<para><bold>Topics Published:</bold> <computeroutput>power_result</computeroutput> (type @rst <computeroutput>NumPwrResult</computeroutput> @endrst ). A zero-valued message is published periodically. A message with appropriate values is published in response to a /num_power message. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -194,7 +200,7 @@ after message is received.
     </collaborationgraph>
     <location file="include/fqdemo_nodes/demo_sub_pub.hpp" line="51" column="1" bodyfile="include/fqdemo_nodes/demo_sub_pub.hpp" bodystart="52" bodyend="84"/>
     <listofallmembers>
-      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a957376ca2d36b9dca22c457dfbb869d5" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>apply_powers</name></member>
+      <member refid="classfqdemo__nodes_1_1DemoSubPub_1a1b5264352aaa2ba44d31dc1d3657f0e5" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>apply_powers</name></member>
       <member refid="classfqdemo__nodes_1_1DemoSubPub_1a53e223874e01f594369c085b7069a772" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>count_</name></member>
       <member refid="classfqdemo__nodes_1_1DemoSubPub_1a594001ae7a02c599fb966f759cd9905d" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>DemoSubPub</name></member>
       <member refid="classfqdemo__nodes_1_1DemoSubPub_1a3434595efd95f3bf945556d85718ea7a" prot="public" virt="non-virtual"><scope>fqdemo_nodes::DemoSubPub</scope><name>publisher_</name></member>

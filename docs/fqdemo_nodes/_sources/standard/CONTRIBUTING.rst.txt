@@ -1,5 +1,0 @@
-CONTRIBUTING
-))))))))))))
-
-.. include:: ../../../../fqdemo_nodes/CONTRIBUTING.md
-   :parser: myst_parser.sphinx_

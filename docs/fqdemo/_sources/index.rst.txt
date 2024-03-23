@@ -1,32 +1,44 @@
+.. GENERATED_CONTENT by rosdoc2.verbs.build.builders.SphinxBuilder.
+
 Package fqdemo
-===============================================================================
+==============
 
 Metapackage as a demo of ros2 package and repo organization
 
-Packages
---------
-* :doc:`Package named fqdemo_nodes <fqdemo_nodes:index>`
+
+Links
+-----
+* `Repository <https://github.com/rosdabbler/fqdemo>`_
+* `Website <https://rosdabbler.github.io/fqdemo/fqdemo>`_
+* `Bugtracker <https://github.com/rosdabbler/fqdemo/issues>`_
+
+ 
+Dependencies of this Meta Package
+---------------------------------------
+* :doc:`fqdemo_nodes:index`
 * :doc:`fqdemo_msgs:index`
-
-.. only:: url_any
-
-   Links
-   -----
-   * `Repository <https://github.com/rosdabbler/fqdemo>`_
-   * `Website <https://rosdabbler.github.io/fqdemo/fqdemo>`_
-   * `Bugtracker <https://github.com/rosdabbler/fqdemo/issues>`_
 
 Project Documentation
 ---------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    *
+   
 
-Indices and Search
+
+Standard Documents
 ------------------
+.. toctree::
+   :maxdepth: 2
+   :glob:
 
-* :ref:`genindex`
-* :ref:`search`
+   generated/standards
+
+
+.. toctree::
+   :hidden:
+
+   generated/index_and_search
