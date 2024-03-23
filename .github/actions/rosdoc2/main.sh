@@ -5,7 +5,7 @@ set -x
 BASE_URL="https://rosdabbler.github.io/fqdemo"
 
 echo "This is main.sh for the rosdoc2 action"
-echo "rosdoc2 repo is $INPUT_ROSDOC2_REPO"
+echo "rosdoc2 repo is $INPUT_ROSDOC2_REPO branch $INPUT_ROSDOC2_BRANCH"
 
 git clone $INPUT_ROSDOC2_REPO /tmp/rosdoc2
 git -C /tmp/rosdoc2 checkout $INPUT_ROSDOC2_BRANCH

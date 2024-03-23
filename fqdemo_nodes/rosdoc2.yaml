@@ -60,7 +60,6 @@ builders:
         #   - extra doxyfile statements which would be added after the default, or user, doxyfile
         name: 'doxygen_builder',
         output_dir: 'generated/doxygen',
-        doxyfile: 'Doxyfile',
         extra_doxyfile_statements: []
     }
     - sphinx: {
